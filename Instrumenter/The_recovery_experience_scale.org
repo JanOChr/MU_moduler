@@ -1,0 +1,23 @@
+This questionnaire is about how you spend your time after work.  Please answer according to your own situation. The questions might look similar but please answer each of them.
+
+#+CAPTION: *The recovery experience questionnaire* (Sonnentag & Fritz, 2007, [[https://www.researchgate.net/publication/6201016_The_Recovery_Experience_Questionnaire_Development_and_Validation_of_a_Measure_for_Assessing_Recuperation_and_Unwinding_From_Work][link]])
+|---+----------------------------+-----------------------------------------------------+-----------------------------------------------|
+|   | Konsept                    | Testledd                                            | Svaralternativer                              |
+|---+----------------------------+-----------------------------------------------------+-----------------------------------------------|
+|   | *Psychological detachment* | I forget about work                                 | 1 (I do not agree at al) to 5 (I fully agree) |
+|   | *Psychological detachment* | I don’t think about work at all                     | 1 (I do not agree at al) to 5 (I fully agree) |
+|   | *Psychological detachment* | I distance myself from my work                      | 1 (I do not agree at al) to 5 (I fully agree) |
+|   | *Psychological detachment* | I get a break from the demands of work              | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Control*                  | I feel like I can decide for myself what to do      | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Control*                  | I decide my own schedule                            | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Control*                  | I determine for myself how I will spend my time     | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Control*                  | I take care of things the way that I want them done | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Mastery*                  | I learn new things                                  | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Mastery*                  | I seek out intellectual challenges                  | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Mastery*                  | I do things that challenge me                       | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Mastery*                  | I do something to broaden my horizons               | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Relaxation*               | I kick back and relax                               | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Relaxation*               | I do relaxing things                                | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Relaxation*               | I use the time to relax                             | 1 (I do not agree at al) to 5 (I fully agree) |
+| / | *Relaxation*               | I take time for leisure                             | 1 (I do not agree at al) to 5 (I fully agree) |
+|---+----------------------------+-----------------------------------------------------+-----------------------------------------------|

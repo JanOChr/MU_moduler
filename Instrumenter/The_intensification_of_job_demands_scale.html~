@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2022-03-10 Thu 09:53 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Jan Olav Christensen" />
+<meta name="generator" content="Org Mode" />
+</head>
+<body>
+<div id="content" class="content">
+<p>
+<b>Veiledning</b>: I løpet av de siste 5 årene, har følgende endringer skjedd i arbeidet ditt? Hvis du har jobbet mindre enn 5 år med det du jobber med nå, vurder utsagnene basert på den tiden du har jobbet med det du jobber med nå.
+</p>
+
+<table>
+<caption class="t-above"><span class="table-number">Table 1:</span> <b>The intensification of job demands scale (IDS)</b> (Kubicheck et al., 2014, <a href="https://www.tandfonline.com/doi/full/10.1080/1359432X.2014.979160">link</a>) / Intensivering av jobbkrav</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Intensivering av arbeid</td>
+<td class="org-left">Det er sjeldnere og sjeldnere tilstrekkelig tid til arbeidsoppgaver</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Intensivering av arbeid</td>
+<td class="org-left">Det blir stadig vanskeligere å ta seg tid til pauser</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Intensivering av arbeid</td>
+<td class="org-left">Tiden mellom de mer intense jobbperiodene har blitt kortere</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Intensivering av arbeid</td>
+<td class="org-left">Man må oftere gjøre to eller tre ting samtidig (for eksempel spise lunsj, skrive e-post og snakke i telefonen)</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Intensivering av arbeid</td>
+<td class="org-left">Stadig mer arbeid må gjøres av færre ansatte</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Økte krav til planlegging og beslutninger i forbindelse med karriere</td>
+<td class="org-left">Man må i stadig større grad opprettholde sin attraktivitet på arbeidsmarkedet (f.eks. gjennom videreutdanning, nettverksbygging)</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Økte krav til planlegging og beslutninger i forbindelse med karriere</td>
+<td class="org-left">Egen faglig utvikling innebærer i økende grad å være åpen for andre alternativer</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Økte krav til planlegging og beslutninger i forbindelse med karriere</td>
+<td class="org-left">Man må i økende grad planlegge sin profesjonelle karriere på egen hånd</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Økte kompetansekrav</td>
+<td class="org-left">Man må i økende grad gjøre seg kjent med nye arbeidsprosesser</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Økte kompetansekrav</td>
+<td class="org-left">Man må i økende grad venne seg til nye arbeidsprosesser</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Økte kompetansekrav</td>
+<td class="org-left">Man må oftere bruke nytt arbeidsutstyr (enheter, programmer, osv.)</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Jan Olav Christensen</p>
+<p class="date">Created: 2022-03-10 Thu 09:53</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

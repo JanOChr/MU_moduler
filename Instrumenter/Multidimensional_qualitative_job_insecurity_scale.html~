@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2022-03-10 Thu 09:53 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Jan Olav Christensen" />
+<meta name="generator" content="Org Mode" />
+</head>
+<body>
+<div id="content" class="content">
+<table>
+<caption class="t-above"><span class="table-number">Table 1:</span> <b>The Multidimensional Qualitative Job Insecurity Scale (MQJIS)</b> (Brondino et al., 2020, <a href="https://link.springer.com/content/pdf/10.1007/s11135-020-00966-y.pdf">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Social relationships</b></td>
+<td class="org-left">I worry I might get another supervisor in the future</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Social relationships</b></td>
+<td class="org-left">I am not sure which colleagues I will be soon cooperating with</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Employment conditions</b></td>
+<td class="org-left">I am insecure about my chances of promotion</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Employment conditions</b></td>
+<td class="org-left">I worry about the growth of my salary</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Working conditions</b></td>
+<td class="org-left">I am afraid I might soon have to work in a different location or in a diferent department</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Working conditions</b></td>
+<td class="org-left">Chances are my workload will increase in the future</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Work content</b></td>
+<td class="org-left">I feel insecure about the future content of my job</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Work content</b></td>
+<td class="org-left">I think my work will become less interesting in the future</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Jan Olav Christensen</p>
+<p class="date">Created: 2022-03-10 Thu 09:53</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

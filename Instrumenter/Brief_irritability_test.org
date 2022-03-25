@@ -1,0 +1,21 @@
+*Veiledning:* Angi hvor ofte du har følt deg eller oppført deg på følgende måter i løpet av de siste to ukene, inkludert i dag.
+
+# *Instructions:* Please indicate how often you have felt or behaved in the following ways, during the past two weeks, including today.
+
+#+CAPTION: *The Brief Irritability Test (BITe)* (Holtzman et al., 2015, [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4318695/][link]])
+| / | <#>            | <#>                                                         | <#>                                                                         |               |                                               |                                                                               |
+|   | Konsept        | Testledd                                                    | Svaralternativer                                                            | Konsept       | Testledd                                      | Svaralternativer                                                              |
+|---+----------------+-------------------------------------------------------------+-----------------------------------------------------------------------------+---------------+-----------------------------------------------+-------------------------------------------------------------------------------|
+|   | *Irritability* | 1. I have been grumpy                                       | 1 = never, 2 = rarely, 3 = sometimes, 4 = often, 5 = very often, 6 = always | Irritabilitet | 1. Jeg har vært gretten                       | 1 = aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte, 6 = alltid |
+|   | *Irritability* | 2. I have been feeling like I might snap                    | 2 = never, 2 = rarely, 3 = sometimes, 4 = often, 5 = very often, 6 = always | Irritabilitet | 2. Jeg har følt at jeg kan komme til å klikke | 1 = aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte, 6 = alltid |
+|   | *Irritability* | 3. Other people have been getting on my nerves              | 3 = never, 2 = rarely, 3 = sometimes, 4 = often, 5 = very often, 6 = always | Irritabilitet | 3. Andre mennesker har gått meg på nervene    | 1 = aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte, 6 = alltid |
+|   | *Irritability* | 4. Things have been bothering me more than they normally do | 4 = never, 2 = rarely, 3 = sometimes, 4 = often, 5 = very often, 6 = always | Irritabilitet | 4. Ting har plaget meg mer enn vanlig         | 1 = aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte, 6 = alltid |
+|   | *Irritability* | 5. I have been feeling irritable                            | 5 = never, 2 = rarely, 3 = sometimes, 4 = often, 5 = very often, 6 = always | Irritabilitet | 5. Jeg har følt meg irritabel                 | 1 = aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte, 6 = alltid |
+|---+----------------+-------------------------------------------------------------+-----------------------------------------------------------------------------+---------------+-----------------------------------------------+-------------------------------------------------------------------------------|
+
+
+
+
+
+
+

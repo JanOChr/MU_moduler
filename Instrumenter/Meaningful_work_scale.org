@@ -1,0 +1,30 @@
+*Instruction:* Please read the following statements carefully and indicate to what extent you agree with them.
+
+#+CAPTION: *ME-Work* (Schnell & Hoffmann, 2020, [[https://www.frontiersin.org/articles/10.3389/fpsyg.2020.599913/full][link]])
+|-------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------------------------------------|
+| Konsept                       | Testledd                                                                                                               | Svaralternativer                               |
+|-------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------------------------------------|
+| *Coherence*                   | 1.	My work reflects my interests.                                                                               | 0 (don’t agree at all) to 5 (agree completely) |
+| *Coherence*                   | 2.	The position I hold in my job fits well with my personal characteristics.                                    | 0 (don’t agree at all) to 5 (agree completely) |
+| *Coherence*                   | 3.	My professional activities fit well with what I have set out to do in life.                                  | 0 (don’t agree at all) to 5 (agree completely) |
+| *Significance*                | 1.	My work makes the world a little bit better.                                                                 | 0 (don’t agree at all) to 5 (agree completely) |
+| *Significance*                | 2.	Through my professional activity I make a valuable contribution to society.                                  | 0 (don’t agree at all) to 5 (agree completely) |
+| *Significance*                | 3.	My work enriches the lives of others.                                                                        | 0 (don’t agree at all) to 5 (agree completely) |
+| *Purpose*                     | 1.	In my workplace, profit comes before humanity. (-)                                                           | 0 (don’t agree at all) to 5 (agree completely) |
+| *Purpose*                     | 2.	My employer is involved in solving social problems.                                                          | 0 (don’t agree at all) to 5 (agree completely) |
+| *Purpose*                     | 3.	It is more important to my employer that tasks are carried out carefully than in the shortest possible time. | 0 (don’t agree at all) to 5 (agree completely) |
+| *Purpose*                     | 4.	My employer cares about the welfare of society.                                                              | 0 (don’t agree at all) to 5 (agree completely) |
+| *Belonging*                   | 1.	I am well integrated into the collegial community.                                                           | 0 (don’t agree at all) to 5 (agree completely) |
+| *Belonging*                   | 2.	I feel comfortable in the company of my colleagues.                                                          | 0 (don’t agree at all) to 5 (agree completely) |
+| *Belonging*                   | 3.	We are a great team at work.                                                                                 | 0 (don’t agree at all) to 5 (agree completely) |
+| *Meaningful work*             | 1.	The work I am doing on my job makes sense to me.                                                             | 0 (don’t agree at all) to 5 (agree completely) |
+| *Meaningful work*             | 2.	I see meaning in my work.                                                                                    | 0 (don’t agree at all) to 5 (agree completely) |
+| *Meaningful work*             | 3.	I find my profession meaningful.                                                                             | 0 (don’t agree at all) to 5 (agree completely) |
+| *Meaningless work*            | 1.	I'm in a career crisis.                                                                                      | 0 (don’t agree at all) to 5 (agree completely) |
+| *Meaningless work*            | 2.	When I think about the meaning of my work, I feel nothing but emptiness.                                     | 0 (don’t agree at all) to 5 (agree completely) |
+| *Meaningless work*            | 3.	I feel pain from finding no meaning in my work.                                                              | 0 (don’t agree at all) to 5 (agree completely) |
+| *Work as a source of meaning* | 1.	I can achieve self-realisation in my work.                                                                   | 0 (don’t agree at all) to 5 (agree completely) |
+| *Work as a source of meaning* | 2.	My work fulfils me.                                                                                          | 0 (don’t agree at all) to 5 (agree completely) |
+| *Work as a source of meaning* | 3.	I can grow through my work.                                                                                  | 0 (don’t agree at all) to 5 (agree completely) |
+| *Work as a source of meaning* | 4.	My professional activity gives meaning to my life.                                                           | 0 (don’t agree at all) to 5 (agree completely) |
+|-------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------------------------------------|

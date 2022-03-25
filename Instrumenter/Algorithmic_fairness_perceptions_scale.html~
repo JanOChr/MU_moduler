@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2022-03-10 Thu 09:53 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Jan Olav Christensen" />
+<meta name="generator" content="Org Mode" />
+</head>
+<body>
+<div id="content" class="content">
+<table frame="border" rules="cols">
+<caption class="t-above"><span class="table-number">Table 1:</span> <b>Algorithmic fairness perceptions</b> (Selvkonstruert)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Algoritmisk rettferdighet</b></td>
+<td class="org-left">Bruker din virksomhet kunstig intelligens eller liknende for å ta beslutninger (automatiserte beslutninger)?</td>
+<td class="org-left">Ofte, Av og til, Aldri, Vet ikke</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Algoritmisk rettferdighet</b></td>
+<td class="org-left">Hvis ikke aldri -&gt; Er automatiserte beslutninger pålitelige?</td>
+<td class="org-left">Ofte, Av og til, Aldri, Vet ikke</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Algoritmisk rettferdighet</b></td>
+<td class="org-left">Hvis ikke aldri -&gt; Er automatiserte beslutninger rettferdige?</td>
+<td class="org-left">Ofte, Av og til, Aldri, Vet ikke</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Jan Olav Christensen</p>
+<p class="date">Created: 2022-03-10 Thu 09:53</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

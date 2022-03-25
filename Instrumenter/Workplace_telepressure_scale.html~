@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2022-03-10 Thu 09:53 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Jan Olav Christensen" />
+<meta name="generator" content="Org Mode" />
+</head>
+<body>
+<div id="content" class="content">
+<p>
+<b>Instructions:</b> For the following questions, think about how you use technology to communicate with people <b>in your workplace</b>. Specifically think about message-based technologies that allow you to control when you respond (email, text messages, voicemail, etc.). Please rate how much you agree or disagree with the statements. When using message-based technology for work purposes&#x2026;
+</p>
+
+<table>
+<caption class="t-above"><span class="table-number">Table 1:</span> <b>Workplace telepressure</b> (Barber &amp; Zantussi, 2014, <a href="https://psycnet.apa.org/record/2014-45450-001">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Preoccupation</b></td>
+<td class="org-left">It’s hard for me to focus on other things when I receive a message from someone</td>
+<td class="org-left">Strongly disagree to strongly agree</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Preoccupation</b></td>
+<td class="org-left">I can concentrate better on other tasks once I’ve responded to my messages</td>
+<td class="org-left">Strongly disagree to strongly agree</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Preoccupation</b></td>
+<td class="org-left">I can’t stop thinking about a message until I’ve responded</td>
+<td class="org-left">Strongly disagree to strongly agree</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Urge</b></td>
+<td class="org-left">I feel a strong need to respond to others immediately</td>
+<td class="org-left">Strongly disagree to strongly agree</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Urge</b></td>
+<td class="org-left">I have an overwhelming feeling to respond right at that moment when I receive a request from someone</td>
+<td class="org-left">Strongly disagree to strongly agree</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Urge</b></td>
+<td class="org-left">It’s difficult for me to resist responding to a message right away</td>
+<td class="org-left">Strongly disagree to strongly agree</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Jan Olav Christensen</p>
+<p class="date">Created: 2022-03-10 Thu 09:53</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

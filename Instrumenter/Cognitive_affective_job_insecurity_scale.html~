@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2022-03-10 Thu 09:53 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Jan Olav Christensen" />
+<meta name="generator" content="Org Mode" />
+</head>
+<body>
+<div id="content" class="content">
+<table frame="border" rules="cols">
+<caption class="t-above"><span class="table-number">Table 1:</span> <b>Cognitive/affective job insecurity</b> (Pienaar et al., 2013, <a href="c:/C:/Users/joc/Downloads/110912-Article%20Text-306075-1-10-20141217.pdf">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Cognitive job insecurity</b></td>
+<td class="org-left">I think that I will be able to continue working here</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Cognitive job insecurity</b></td>
+<td class="org-left">There is only a small chance that I will become unemployed</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Cognitive job insecurity</b></td>
+<td class="org-left">I am certain/sure of my job environment</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Cognitive job insecurity</b></td>
+<td class="org-left">I am very sure that I will be able to keep my job</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Affective job insecurity</b></td>
+<td class="org-left">I feel uncertain about the future of my job</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Affective job insecurity</b></td>
+<td class="org-left">I worry about the continuation of my career</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Affective job insecurity</b></td>
+<td class="org-left">I fear that I might lose my job</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Affective job insecurity</b></td>
+<td class="org-left">I fear that I might get fired</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Jan Olav Christensen</p>
+<p class="date">Created: 2022-03-10 Thu 09:53</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

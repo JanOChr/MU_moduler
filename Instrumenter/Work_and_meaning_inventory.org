@@ -1,0 +1,15 @@
+#+CAPTION: *The work and meaning inventory (WAMI)* (Steger, 2011, [[http://www.michaelfsteger.com/wp-content/uploads/2012/08/WAMI.pdf][link]])
+|---------------------------------------------------------------+-----------------------------------------------------------------------------------------|
+| Testledd                                                      | Svaralternativer                                                                        |
+|---------------------------------------------------------------+-----------------------------------------------------------------------------------------|
+| 1. I have found a meaningful career                           | Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true |
+| 2. I view my work as contributing to my personal growth.      | Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true |
+| 3. My work really makes no difference to the world.           | Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true |
+| 4. I understand how my work contributes to my life’s meaning. | Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true |
+| 5. I have a good sense of what makes my job meaningful.       | Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true |
+| 6. I know my work makes a positive difference in the world.   | Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true |
+| 7. My work helps me better understand myself.                 | Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true |
+| 8. I have discovered work that has a satisfying purpose.      | Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true |
+| 9. My work helps me make sense of the world around me.        | Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true |
+| 10. The work I do serves a greater purpose.                   | Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true |
+|---------------------------------------------------------------+-----------------------------------------------------------------------------------------|

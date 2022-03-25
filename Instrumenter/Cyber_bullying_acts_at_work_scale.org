@@ -1,0 +1,27 @@
+#+CAPTION: *Inventory of Cyberbullying Acts at Work (ICA-W)* (Vranjes et al., 2017, [[https://www.tandfonline.com/doi/abs/10.1080/1359432X.2017.1363185?needAccess=true][link]])
+| / | <#>            | <#>                                                                                                          | <#>                                           |                       |                                                                                       |                                                      |
+|   | Konsept        | Testledd                                                                                                     | Svaralternativer                              | Konsept               | Testledd                                                                              | Svaralternativer                                     |
+|---+----------------+--------------------------------------------------------------------------------------------------------------+-----------------------------------------------+-----------------------+---------------------------------------------------------------------------------------+------------------------------------------------------|
+|   | Work related   | Your emails, phone calls or messages are ignored at work.  1 never, 2 one time, 3 monthly, 4 weekly, 5 daily | 1 Never, 2 Once, 3 Monthly, 4 Weekly, 5 Daily | Arbeidsrelatert       | E-postene, telefonsamtalene eller meldingene dine blir ignorert på jobben.            | 1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig |
+|   | Work related   | Your emails are forwarded to third parties in order to harm you.                                             | 1 Never, 2 Once, 3 Monthly, 4 Weekly, 5 Daily | Arbeidsrelatert       | E-postene dine videresendes til tredjeparter for å skade deg.                         | 1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig |
+|   | Work related   | Your work is criticized publicly by means of ICTs                                                            | 1 Never, 2 Once, 3 Monthly, 4 Weekly, 5 Daily | Arbeidsrelatert       | Arbeidet ditt kritiseres åpent ved hjelp av IKT                                       | 1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig |
+|   | Work related   | Somebody is withholding e-mails or files you need,                                                           | 1 Never, 2 Once, 3 Monthly, 4 Weekly, 5 Daily | Arbeidsrelatert       | Noen holder tilbake e-poster eller filer du trenger                                   | 1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig |
+|   | Person related | Rumors or gossips are being spread about you by means of ICTs.                                               | 1 Never, 2 Once, 3 Monthly, 4 Weekly, 5 Daily | Personrelatert        | Rykter eller sladder spres om deg ved hjelp av IKT.                                   | 1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig |
+|   | Person related | You are being insulted, threatened or intimidated by means of ICTs                                           | 1 Never, 2 Once, 3 Monthly, 4 Weekly, 5 Daily | Personrelatert        | Du blir fornærmet, truet eller skremt ved hjelp av IKT                                | 1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig |
+|   | Person related | Constant remarks are being made about you and your private life by means of ICTs.                            | 1 Never, 2 Once, 3 Monthly, 4 Weekly, 5 Daily | Personrelatert        | Du mottar stadig kommentarer om deg og ditt privatliv gjennom IKT.                    | 1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig |
+|   | Intrusion      | Your personal information is hacked and used to harm you.                                                    | 1 Never, 2 Once, 3 Monthly, 4 Weekly, 5 Daily | Krenking av privatliv | Din personlige informasjon er hacket og brukt til å skade deg.                        | 1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig |
+|   | Intrusion      | Somebody takes over your identity.                                                                           | 1 Never, 2 Once, 3 Monthly, 4 Weekly, 5 Daily | Krenking av privatliv | Noen stjeler identiteten din.                                                         | 1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig |
+|   | Intrusion      | Personal information about you is shared online or distributed via messages to others                        | 1 Never, 2 Once, 3 Monthly, 4 Weekly, 5 Daily | Krenking av privatliv | Personopplysninger om deg deles på nettet eller distribueres via meldinger til andre. | 1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig |
+|---+----------------+--------------------------------------------------------------------------------------------------------------+-----------------------------------------------+-----------------------+---------------------------------------------------------------------------------------+------------------------------------------------------|
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2022-03-10 Thu 09:53 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Jan Olav Christensen" />
+<meta name="generator" content="Org Mode" />
+</head>
+<body>
+<div id="content" class="content">
+<p>
+<b>Instructions:</b> Below are eight statements with which you may agree or disagree. Using the 1—7 scale below, indicate your agreement with each item by indicating that response for each statement.
+</p>
+
+<table>
+<caption class="t-above"><span class="table-number">Table 1:</span> <b>Flourishing scale</b> (Diener et al, 2009, <a href="https://www.researchgate.net/publication/304673145_New_measures_of_well-being_Flourishing_and_positive_and_negative_feeling">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">I lead a purposeful and meaningful life</td>
+<td class="org-left">7. Strongly agree, 6. Agree, 5. Slightly agree, 4. Mixed or neither agree nor disagree, 3. Slightly disagree, 2. Disagree, 1. Strongly disagree</td>
+</tr>
+
+<tr>
+<td class="org-left">My social relationships are supportive and rewarding</td>
+<td class="org-left">7. Strongly agree, 6. Agree, 5. Slightly agree, 4. Mixed or neither agree nor disagree, 3. Slightly disagree, 2. Disagree, 1. Strongly disagree</td>
+</tr>
+
+<tr>
+<td class="org-left">I am engaged and interested in my daily activitiesI actively contribute to the happiness and well-being of others</td>
+<td class="org-left">7. Strongly agree, 6. Agree, 5. Slightly agree, 4. Mixed or neither agree nor disagree, 3. Slightly disagree, 2. Disagree, 1. Strongly disagree</td>
+</tr>
+
+<tr>
+<td class="org-left">I am competent and capable in the activities that are important to me</td>
+<td class="org-left">7. Strongly agree, 6. Agree, 5. Slightly agree, 4. Mixed or neither agree nor disagree, 3. Slightly disagree, 2. Disagree, 1. Strongly disagree</td>
+</tr>
+
+<tr>
+<td class="org-left">I am a good person and live a good life</td>
+<td class="org-left">7. Strongly agree, 6. Agree, 5. Slightly agree, 4. Mixed or neither agree nor disagree, 3. Slightly disagree, 2. Disagree, 1. Strongly disagree</td>
+</tr>
+
+<tr>
+<td class="org-left">I am optimistic about my future</td>
+<td class="org-left">7. Strongly agree, 6. Agree, 5. Slightly agree, 4. Mixed or neither agree nor disagree, 3. Slightly disagree, 2. Disagree, 1. Strongly disagree</td>
+</tr>
+
+<tr>
+<td class="org-left">People respect me</td>
+<td class="org-left">7. Strongly agree, 6. Agree, 5. Slightly agree, 4. Mixed or neither agree nor disagree, 3. Slightly disagree, 2. Disagree, 1. Strongly disagree</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Jan Olav Christensen</p>
+<p class="date">Created: 2022-03-10 Thu 09:53</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

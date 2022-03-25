@@ -1,0 +1,9 @@
+#+CAPTION: *Algorithmic fairness perceptions* (Selvkonstruert)
+#+ATTR_HTML: :frame border  :rules cols
+|-----------------------------+---------------------------------------------------------------------------------------------------------------+----------------------------------|
+| Konsept                     | Testledd                                                                                                      | Svaralternativer                 |
+|-----------------------------+---------------------------------------------------------------------------------------------------------------+----------------------------------|
+| *Algoritmisk rettferdighet* | Bruker din virksomhet kunstig intelligens eller liknende for å ta beslutninger (automatiserte beslutninger)? | Ofte, Av og til, Aldri, Vet ikke |
+| *Algoritmisk rettferdighet* | Hvis ikke aldri -> Er automatiserte beslutninger pålitelige?                                                 | Ofte, Av og til, Aldri, Vet ikke |
+| *Algoritmisk rettferdighet* | Hvis ikke aldri -> Er automatiserte beslutninger rettferdige?                                                 | Ofte, Av og til, Aldri, Vet ikke |
+|-----------------------------+---------------------------------------------------------------------------------------------------------------+----------------------------------|

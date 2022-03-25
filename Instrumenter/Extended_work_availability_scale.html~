@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2022-03-10 Thu 09:53 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Jan Olav Christensen" />
+<meta name="generator" content="Org Mode" />
+</head>
+<body>
+<div id="content" class="content">
+<table>
+<caption class="t-above"><span class="table-number">Table 1:</span> <b>Extended work availability</b> (Brauner et al., 2021, <a href="https://www.tandfonline.com/doi/full/10.1080/02678373.2021.1969475">link</a>) / Utvidet jobbtilgjengelighet</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Forventninger til tilgjengelighet</td>
+<td class="org-left">“Arbeidsplassen min forventer at jeg er tilgjengelig for jobbrelaterte saker på fritiden min”</td>
+<td class="org-left">1 Stemmer ikke i det hele tatt, 2, 3, 4, 5 Stemmer helt</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontakthyppighet</td>
+<td class="org-left">“Hvor ofte blir du kontaktet av kolleger, ledere eller kunder privat/når du ikke er på jobb?”</td>
+<td class="org-left">Ofte, noen ganger, sjelden, aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Opplevd nødvendighet av ikke-regulert, utvidet jobbtilgjengelighet</td>
+<td class="org-left">“Hvor ofte synes du det er nødvendig å være tilgjengelig for jobbrelaterte saker på fritiden?”</td>
+<td class="org-left">Ofte, noen ganger, sjelden, aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Opplevd rimelighet av ikke-regulert, utvidet jobbtilgjengelighet</td>
+<td class="org-left">“Hvor ofte synes du personlig det er rimelig å være tilgjengelig for jobbrelaterte saker på fritiden?”</td>
+<td class="org-left">Ofte, noen ganger, sjelden, aldri</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Jan Olav Christensen</p>
+<p class="date">Created: 2022-03-10 Thu 09:53</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
