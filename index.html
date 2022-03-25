@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nb">
 <head>
-<!-- 2022-03-25 fre. 13:33 -->
+<!-- 2022-03-25 fre. 14:04 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Spørreskjema til moduler STAMI medarbeiderundersøkelse (M&mu;)</title>
@@ -34,7 +34,9 @@ elems[i].removeAttribute("open");
 <div id="content">
 <header>
 <h1 class="title">Spørreskjema til moduler STAMI medarbeiderundersøkelse (M&mu;)</h1>
-</header><details> <summary> POTENSIELLE VIRKNINGER AV ARBEIDSFORHOLD </summary>
+</header><button id="btnExpandHideAllDetails" onclick="openAll()" style="color:white;background-color:#87B3E6;">Se alt</button>
+
+<details> <summary> POTENSIELLE VIRKNINGER AV ARBEIDSFORHOLD </summary>
 <details> <summary> Organisasjonstilhørighet </summary>
 <table>
 <caption class="t-above"><span class="table-number">Tabell 1</span> <b>Organizational commitment</b> (QPS, <a href="https://www.qps-nordic.org/en/doc/QPSNordic_questionnaire.pdf">link</a>)</caption>
@@ -724,8 +726,6 @@ elems[i].removeAttribute("open");
 </table>
 </details>
 </details>
-<button id="btnExpandHideAllDetails" onclick="openAll()" style="color:white;background-color:#87B3E6;">Se alt</button>
-
 <details> <summary> NYE ARBEIDSMÅTER </summary>
 
 <details> <summary> Skala for digitale stressorer </summary>
