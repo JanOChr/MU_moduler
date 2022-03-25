@@ -1,128 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
-<!-- 2022-02-17 tor. 13:13 -->
+<!-- 2022-03-25 fre. 13:33 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moduler til STAMI medarbeiderundersøkelse (M&mu;)</title>
+<title>Spørreskjema til moduler STAMI medarbeiderundersøkelse (M&mu;)</title>
 <meta name="generator" content="Org mode">
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/bigblow.css"/>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/hideshow.css"/>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-ui-1.10.2.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.localscroll-min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.zclip.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/bigblow.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/hideshow.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
-<style> #content {max-width:1700px;} </style>
-<style> p {max-width:1080px;} </style>
-<style> li {max-width:1080px;} </style>
-<style>
-h1 {color: white; font-size: 40px; background-color:#67B3E3; padding:10px;}
-.buttons {
-padding: 0px 7px 13px 0px;
-background: #67B3E3;
-}
-#tabs {
-background-color: #67B3E3;
-float: left;
-margin: 0px 0px 20px 0px;
-padding: 0;
-width: 100%;
-}
-h1, ul#tabs, h2, h3, h4, h5 {
-font-family: sans-serif;
-}
-</style>
 <script> var HS_STARTUP_FOLDED = true; </script>
+<script>
+function openAll() {
+var elems = document.getElementsByTagName("details");
+document.getElementById("btnExpandHideAllDetails").innerHTML = "Lukk alt";
+document.getElementById("btnExpandHideAllDetails").setAttribute( "onClick", "javascript: closeAll();");
 
-        <style>
-        /* From: https://endlessparentheses.com/public/css/endless.css */
-        /* See also: https://meta.superuser.com/questions/4788/css-for-the-new-kbd-style */
-        kbd
-        {
-          -moz-border-radius: 6px;
-          -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-          -webkit-border-radius: 6px;
-          -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-          background-color: #f7f7f7;
-          border: 1px solid #ccc;
-          border-radius: 6px;
-          box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-          color: #333;
-          display: inline-block;
-          font-family: 'Droid Sans Mono', monospace;
-          font-size: 80%;
-          font-weight: normal;
-          line-height: inherit;
-          margin: 0 .1em;
-          padding: .08em .4em;
-          text-shadow: 0 1px 0 #fff;
-          word-spacing: -4px;
-        
-          box-shadow: 2px 2px 2px #222; /* MA: An extra I've added. */
-        }
-        </style>
-        <link rel="stylesheet" type="text/css" href="https://alhassy.github.io/org-special-block-extras/tooltipster/dist/css/tooltipster.bundle.min.css"/>
-        
-        <link rel="stylesheet" type="text/css" href="https://alhassy.github.io/org-special-block-extras/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
-        
-        <script type="text/javascript">
-            if (typeof jQuery == 'undefined') {
-                document.write(unescape('%3Cscript src="https://code.jquery.com/jquery-1.10.0.min.js"%3E%3C/script%3E'));
-            }
-        </script>
-        
-         <script type="text/javascript"            src="https://alhassy.github.io/org-special-block-extras/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
-        
-          <script>
-                 $(document).ready(function() {
-                     $('.tooltip').tooltipster({
-                         theme: 'tooltipster-punk',
-                         contentAsHTML: true,
-                         animation: 'grow',
-                         delay: [100,500],
-                         // trigger: 'click'
-                         trigger: 'custom',
-                         triggerOpen: {
-                             mouseenter: true
-                         },
-                         triggerClose: {
-                             originClick: true,
-                             scroll: true
-                         }
-         });
-                 });
-             </script>
-        
-        <style>
-           abbr {color: red;}
-        
-           .tooltip { border-bottom: 1px dotted #000;
-                      color:red;
-                      text-decoration: none;}
-        </style>
+for (var i = 0; i <= elems.length; i++){
+elems[i].setAttribute("open", "true");
+}
+}
+
+function closeAll() {
+var elems = document.getElementsByTagName("details");
+document.getElementById("btnExpandHideAllDetails").setAttribute( "onClick", "javascript: openAll();" );
+document.getElementById("btnExpandHideAllDetails").innerHTML = "Se alt";
+
+for (var i = 0; i <= elems.length; i++){
+elems[i].removeAttribute("open");
+}
+}
+</script>
+<link rel="stylesheet" href="STYLE.css">
 </head>
 <body>
 <div id="content">
 <header>
-<h1 class="title">Moduler til STAMI medarbeiderundersøkelse (M&mu;)</h1>
-</header><div id="outline-container-orgcfbde14" class="outline-2">
-<h2 id="orgcfbde14">NYE ARBEIDSMÅTER</h2>
-<div class="outline-text-2" id="text-orgcfbde14">
-</div>
-<div id="outline-container-orgfbe736a" class="outline-3">
-<h3 id="orgfbe736a">Digitalt stress</h3>
-<div class="outline-text-3" id="text-orgfbe736a">
-</div>
-<div id="outline-container-orgcda474f" class="outline-4">
-<h4 id="orgcda474f">Digital stressors scale (DSS)</h4>
-<div class="outline-text-4" id="text-orgcda474f">
+<h1 class="title">Spørreskjema til moduler STAMI medarbeiderundersøkelse (M&mu;)</h1>
+</header><details> <summary> POTENSIELLE VIRKNINGER AV ARBEIDSFORHOLD </summary>
+<details> <summary> Organisasjonstilhørighet </summary>
 <table>
-<caption class="t-above"><span class="table-number">Table 1:</span> <b>Digital stressors scale (DSS)</b> (Fischer et al., 2021,  <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2021.607598/full">link</a>)</caption>
+<caption class="t-above"><span class="table-number">Tabell 1</span> <b>Organizational commitment</b> (QPS, <a href="https://www.qps-nordic.org/en/doc/QPSNordic_questionnaire.pdf">link</a>)</caption>
 
 <colgroup>
 <col  class="org-left">
@@ -140,138 +55,28 @@ font-family: sans-serif;
 </thead>
 <tbody>
 <tr>
-<td class="org-left"><b>Overload</b></td>
-<td class="org-left">Due to ICT I have too much to do.</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Organisasjonstilhørighet</td>
+<td class="org-left">Jeg sier til mine venner at dette er en god organisasjon å arbeide i</td>
+<td class="org-left">1 Helt uenig, 2 Noe uenig, 3 Likegyldig, 4 Noe enig, 5 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Overload</b></td>
-<td class="org-left">Due to ICT I have a too large variety of different things to do at work.</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Organisasjonstilhørighet</td>
+<td class="org-left">Mine verdier er veldig like organisasjonens verdier</td>
+<td class="org-left">1 Helt uenig, 2 Noe uenig, 3 Likegyldig, 4 Noe enig, 5 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Overload</b></td>
-<td class="org-left">ICT make it too easy for other individuals to send me additional work.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Overload</b></td>
-<td class="org-left">I never have any spare time, because my schedule is too tightly organized by ICT.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Overload</b></td>
-<td class="org-left">There is a constant surge of work-related information coming in through ICT that I just cannot keep up with.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Technical Support</b></td>
-<td class="org-left">I have to worry about ICT-related problems as our organization does not offer enough support for their removal.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Technical Support</b></td>
-<td class="org-left">In the case of ICT-related problems, it happens too often that there is not enough support available at work.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Technical Support</b></td>
-<td class="org-left">I think that it happens too often that technical support is not available when I need it.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Technical Support</b></td>
-<td class="org-left">I often have to wait for a long time because technical problems cannot be adequately solved in our organization.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Technical Support</b></td>
-<td class="org-left">I fear that a technical problem I have at work could not be solved by anyone else at work.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Usefulness</b></td>
-<td class="org-left">I think that the demands of my work and the functions provided by the ICT I use do not fit sufficiently.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Usefulness</b></td>
-<td class="org-left">I think that I do not gain enough benefits from using the ICT that I am provided with at work for my tasks.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Usefulness</b></td>
-<td class="org-left">The ICT I use at work are full of too many functionalities that I never need.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Usefulness</b></td>
-<td class="org-left">It requires too many different systems to fulfill the tasks that I have to do during an average day at work.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Usefulness</b></td>
-<td class="org-left">I think that most of the ICT I am supplied with at work is not useful enough and I could work without it.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Unreliability</b></td>
-<td class="org-left">I think that I am too often confronted with unexpected behavior of the ICT I use at work (e.g., breakdowns or long response times).</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Unreliability</b></td>
-<td class="org-left">I think that I lose too much time due to technical malfunctions.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Unreliability</b></td>
-<td class="org-left">I think that I spend too much time trying to fix technical malfunctions.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Unreliability</b></td>
-<td class="org-left">There is just too much of my time at work wasted coping with the unreliability of ICT.</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Unreliability</b></td>
-<td class="org-left">The daily hassles with ICT (e.g., slow programs or unexpected behavior) are really bothering me.</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Organisasjonstilhørighet</td>
+<td class="org-left">Denne organisasjonen inspirerer meg virkelig til å yte mitt beste</td>
+<td class="org-left">1 Helt uenig, 2 Noe uenig, 3 Likegyldig, 4 Noe enig, 5 Helt enig</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-<div id="outline-container-org808ee8c" class="outline-3">
-<h3 id="org808ee8c">Tilgjengelighet og jobb-privatliv-balanse</h3>
-<div class="outline-text-3" id="text-org808ee8c">
-</div>
-<div id="outline-container-org0b48041" class="outline-4">
-<h4 id="org0b48041">Extended work availability</h4>
-<div class="outline-text-4" id="text-org0b48041">
+</details>
+<details> <summary> Jobbengasjement </summary>
 <table>
-<caption class="t-above"><span class="table-number">Table 2:</span> <b>Extended work availability</b> (Brauner et al., 2021, <a href="https://www.tandfonline.com/doi/full/10.1080/02678373.2021.1969475">link</a>)</caption>
+<caption class="t-above"><span class="table-number">Tabell 2</span> <b>Utrecht Work Engagement Scale (UWES)</b> (Schaufeli et al., 2001, <a href="https://link.springer.com/content/pdf/10.1023/A:1015630930326.pdf">link</a>)</caption>
 
 <colgroup>
 <col  class="org-left">
@@ -289,42 +94,74 @@ font-family: sans-serif;
 </thead>
 <tbody>
 <tr>
-<td class="org-left"><b>Availability expectations</b></td>
-<td class="org-left">“My work environment expects me to be available for work-related matters in my private life”</td>
-<td class="org-left">1 (does not apply at all) to 5 (applies completely)</td>
+<td class="org-left">Arbeidslyst</td>
+<td class="org-left">Jeg føler at jeg er full av energi på jobb</td>
+<td class="org-left">0 = Aldri, 1 = Nesten aldri (Noen ganger i året eller mindre), 2 = Sjelden (En gang i måneden eller mindre), 3 = Noen ganger (Noen ganger i måneden), 4 = Ofte (En gang i uken), 5 = Svært ofte (Noen ganger i uken), 6 = Alltid (Hver dag)</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Contacting frequency</b></td>
-<td class="org-left">“How often are you contacted by colleagues, supervisors or customers in your private life?”</td>
-<td class="org-left">Frequently, sometimes, seldom, never</td>
+<td class="org-left">Arbeidslyst</td>
+<td class="org-left">Jeg føler meg sterk og energisk på jobb</td>
+<td class="org-left">0 = Aldri, 1 = Nesten aldri (Noen ganger i året eller mindre), 2 = Sjelden (En gang i måneden eller mindre), 3 = Noen ganger (Noen ganger i måneden), 4 = Ofte (En gang i uken), 5 = Svært ofte (Noen ganger i uken), 6 = Alltid (Hver dag)</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Perceived necessity of unregulated extended work availability</b></td>
-<td class="org-left">“How often do you think it is necessary to be available for work-related matters in your free time?”</td>
-<td class="org-left">Frequently, sometimes, seldom, never</td>
+<td class="org-left">Engasjement</td>
+<td class="org-left">Jeg er begeistret for jobben min</td>
+<td class="org-left">0 = Aldri, 1 = Nesten aldri (Noen ganger i året eller mindre), 2 = Sjelden (En gang i måneden eller mindre), 3 = Noen ganger (Noen ganger i måneden), 4 = Ofte (En gang i uken), 5 = Svært ofte (Noen ganger i uken), 6 = Alltid (Hver dag)</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Perceived reasonableness of unregulated extended work availability</b></td>
-<td class="org-left">“How often do you personally think it is reasonable to be available for work-related matters in your free time?”</td>
-<td class="org-left">Frequently, sometimes, seldom, never</td>
+<td class="org-left">Engasjement</td>
+<td class="org-left">Jobben min inspirerer meg</td>
+<td class="org-left">0 = Aldri, 1 = Nesten aldri (Noen ganger i året eller mindre), 2 = Sjelden (En gang i måneden eller mindre), 3 = Noen ganger (Noen ganger i måneden), 4 = Ofte (En gang i uken), 5 = Svært ofte (Noen ganger i uken), 6 = Alltid (Hver dag)</td>
+</tr>
+
+<tr>
+<td class="org-left">Arbeidslyst</td>
+<td class="org-left">Når jeg står opp om morgenen, har jeg lyst til å dra på jobb</td>
+<td class="org-left">0 = Aldri, 1 = Nesten aldri (Noen ganger i året eller mindre), 2 = Sjelden (En gang i måneden eller mindre), 3 = Noen ganger (Noen ganger i måneden), 4 = Ofte (En gang i uken), 5 = Svært ofte (Noen ganger i uken), 6 = Alltid (Hver dag)</td>
+</tr>
+
+<tr>
+<td class="org-left">Oppslukthet</td>
+<td class="org-left">Jeg føler meg lykkelig når jeg jobber intenst</td>
+<td class="org-left">0 = Aldri, 1 = Nesten aldri (Noen ganger i året eller mindre), 2 = Sjelden (En gang i måneden eller mindre), 3 = Noen ganger (Noen ganger i måneden), 4 = Ofte (En gang i uken), 5 = Svært ofte (Noen ganger i uken), 6 = Alltid (Hver dag)</td>
+</tr>
+
+<tr>
+<td class="org-left">Engasjement</td>
+<td class="org-left">Jeg er stolt av arbeidet jeg gjør</td>
+<td class="org-left">0 = Aldri, 1 = Nesten aldri (Noen ganger i året eller mindre), 2 = Sjelden (En gang i måneden eller mindre), 3 = Noen ganger (Noen ganger i måneden), 4 = Ofte (En gang i uken), 5 = Svært ofte (Noen ganger i uken), 6 = Alltid (Hver dag)</td>
+</tr>
+
+<tr>
+<td class="org-left">Oppslukthet</td>
+<td class="org-left">Jeg er oppslukt i arbeidet mitt</td>
+<td class="org-left">0 = Aldri, 1 = Nesten aldri (Noen ganger i året eller mindre), 2 = Sjelden (En gang i måneden eller mindre), 3 = Noen ganger (Noen ganger i måneden), 4 = Ofte (En gang i uken), 5 = Svært ofte (Noen ganger i uken), 6 = Alltid (Hver dag)</td>
+</tr>
+
+<tr>
+<td class="org-left">Oppslukthet</td>
+<td class="org-left">Jeg blir revet med når jeg jobber</td>
+<td class="org-left">0 = Aldri, 1 = Nesten aldri (Noen ganger i året eller mindre), 2 = Sjelden (En gang i måneden eller mindre), 3 = Noen ganger (Noen ganger i måneden), 4 = Ofte (En gang i uken), 5 = Svært ofte (Noen ganger i uken), 6 = Alltid (Hver dag)</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-
-<div id="outline-container-orgd55174c" class="outline-4">
-<h4 id="orgd55174c">Work-Life Boundary Enactment Scale</h4>
-<div class="outline-text-4" id="text-orgd55174c">
+</details>
+<details> <summary> Kognitivt stress </summary>
 <p>
-<b>Instructions:</b> "The following questions are concerned with how you currently manage the boundaries between work and nonwork life. The items below consist of two opposing statements. Please indicate for each item, what matches your own behavior. The closer to a statement you put your mark, the more this statement reflects your own behavior. There is no right or wrong."
+<b>Veiledning:</b> Disse spørsmålene handler om hvordan du har hatt det de siste fire ukene.
 </p>
 
 <table>
-<caption class="t-above"><span class="table-number">Table 3:</span> <b>Work-Life Boundary Enactment Scale</b> (Wepfer et al., 2018, <a href="https://link.springer.com/content/pdf/10.1007/s10869-017-9520-y.pdf">link</a>)</caption>
+<caption class="t-above"><span class="table-number">Tabell 3</span> <b>Cognitive stress, COPSOQ III</b> (<a href="https://www.copsoq-network.org/assets/Uploads/COPSOQ-network-guidelines-an-questionnaire-COPSOQ-III-180821.pdf">link</a>)</caption>
 
 <colgroup>
 <col  class="org-left">
@@ -342,296 +179,38 @@ font-family: sans-serif;
 </thead>
 <tbody>
 <tr>
-<td class="org-left"><b>Work-to-life segmentation/integration</b></td>
-<td class="org-left">I never take work home. ○1 ○2 ○3 ○4 ○5 ○6 ○7 I often take work home.</td>
-<td class="org-left">Motsatte utsagn med en sjupunkts skala mellom</td>
+<td class="org-left">Kognitivt stress</td>
+<td class="org-left">Hvor ofte har du hatt problemer med å konsentrere deg?</td>
+<td class="org-left">Alltid (100); Ofte (75); Noen ganger (50); Sjelden (25); Aldri/nesten aldri (0)</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Work-to-life segmentation/integration</b></td>
-<td class="org-left">I always leave my workplace on time. ○1 ○2 ○3 ○4 ○5 ○6 ○7 I often leave my workplace late.</td>
-<td class="org-left">Motsatte utsagn med en sjupunkts skala mellom</td>
+<td class="org-left">Kognitivt stress</td>
+<td class="org-left">Hvor ofte har det vært vanskelig å tenke klart?</td>
+<td class="org-left">Alltid (100); Ofte (75); Noen ganger (50); Sjelden (25); Aldri/nesten aldri (0)</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Work-to-life segmentation/integration</b></td>
-<td class="org-left">I never work after hours or on weekends. ○1 ○2 ○3 ○4 ○5 ○6 ○7 I often work after hours or on weekends.</td>
-<td class="org-left">Motsatte utsagn med en sjupunkts skala mellom</td>
+<td class="org-left">Kognitivt stress</td>
+<td class="org-left">Hvor ofte har du hatt problemer med å ta avgjørelser?</td>
+<td class="org-left">Alltid (100); Ofte (75); Noen ganger (50); Sjelden (25); Aldri/nesten aldri (0)</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Work-to-life segmentation/integration</b></td>
-<td class="org-left">I never think about work matters during my time off. ○1 ○2 ○3 ○4 ○5 ○6 ○7 I often think about work matters during my time off.</td>
-<td class="org-left">Motsatte utsagn med en sjupunkts skala mellom</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Work-to-life segmentation/integration</b></td>
-<td class="org-left">I never communicate with people from work during my time off. ○1 ○2 ○3 ○4 ○5 ○6 ○7 I often communicate with people from work during my time off.</td>
-<td class="org-left">Motsatte utsagn med en sjupunkts skala mellom</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Life-to-work segmentation/integration</b></td>
-<td class="org-left">I never take care of nonwork matters while physically at my workplace. ○1 ○2 ○3 ○4 ○5 ○6 ○7 I often take care of nonwork matters while physically at my workplace.</td>
-<td class="org-left">Motsatte utsagn med en sjupunkts skala mellom</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Life-to-work segmentation/integration</b></td>
-<td class="org-left">I never get to work late or leave early, in order to take care of nonwork matters. ○1 ○2 ○3 ○4 ○5 ○6 ○7 I often get to work late or leave early, in order to take care of nonwork matters.</td>
-<td class="org-left">Motsatte utsagn med en sjupunkts skala mellom</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Life-to-work segmentation/integration</b></td>
-<td class="org-left">I never take care of nonwork matters during scheduled work hours. ○1 ○2 ○3 ○4 ○5 ○6 ○7 I often take care of nonwork matters during scheduled work hours.</td>
-<td class="org-left">Motsatte utsagn med en sjupunkts skala mellom</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Life-to-work segmentation/integration</b></td>
-<td class="org-left">I never think about nonwork issues while I am at work. ○1 ○2 ○3 ○4 ○5 ○6 ○7 I often think about nonwork issues while I am at work.</td>
-<td class="org-left">Motsatte utsagn med en sjupunkts skala mellom</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Life-to-work segmentation/integration</b></td>
-<td class="org-left">I never communicate with family and friends while I am at work. ○1 ○2 ○3 ○4 ○5 ○6 ○7 I often communicate with family and friends while I am at work.</td>
-<td class="org-left">Motsatte utsagn med en sjupunkts skala mellom</td>
+<td class="org-left">Kognitivt stress</td>
+<td class="org-left">Hvor ofte har du hatt problemer med å huske?</td>
+<td class="org-left">Alltid (100); Ofte (75); Noen ganger (50); Sjelden (25); Aldri/nesten aldri (0)</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org0e5ffb9" class="outline-3">
-<h3 id="org0e5ffb9">Intensivering av arbeidet</h3>
-<div class="outline-text-3" id="text-org0e5ffb9">
-</div>
-<div id="outline-container-org79593a0" class="outline-4">
-<h4 id="org79593a0">Interruptions; Short Questionnaire for Job Analysis, Organizational Constraints scale</h4>
-<div class="outline-text-4" id="text-org79593a0">
-<table>
-<caption class="t-above"><span class="table-number">Table 4:</span> <b>Interruptions; Short Questionnaire for Job Analysis</b> (Prümper et al., 1995, <a href="https://people.f3.htw-berlin.de/Professoren/Pruemper/instrumente/KFZA-Skalenkonstruktion.pdf">link</a>), <b>Organizational Constraints scale</b> (Spector &amp; Jex, <a href="https://paulspector.com/assessments/pauls-no-cost-assessments/organizational-constraints-scale-ocs/">link</a>)</caption>
-
-<colgroup>
-<col  class="org-left">
-
-<col  class="org-left">
-
-<col  class="org-left">
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Konsept</th>
-<th scope="col" class="org-left">Testledd</th>
-<th scope="col" class="org-left">Svaralternativer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left"><b>Short Q for JA</b></td>
-<td class="org-left">“I keep getting interrupted while working on my main tasks (e.g. through telephone calls)”</td>
-<td class="org-left">1 (never) to 5 (always)</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Short Q for JA</b></td>
-<td class="org-left">“I cannot focus on one task because I am getting interrupted all the time”</td>
-<td class="org-left">1 (never) to 5 (always)</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>OC scale</b></td>
-<td class="org-left">“How often do you find it difficult or impossible to do your job because of interruptions by other people?”</td>
-<td class="org-left">1 (never) to 5 (always)</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div id="outline-container-orgb601bd8" class="outline-4">
-<h4 id="orgb601bd8">The intensification of job demands scale</h4>
-<div class="outline-text-4" id="text-orgb601bd8">
-<table>
-<caption class="t-above"><span class="table-number">Table 5:</span> <b>The intensification of job demands scale (IDS)</b> (Kubicheck et al., 2014, <a href="https://www.tandfonline.com/doi/full/10.1080/1359432X.2014.979160">link</a>)</caption>
-
-<colgroup>
-<col  class="org-left">
-
-<col  class="org-left">
-
-<col  class="org-left">
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Konsept</th>
-<th scope="col" class="org-left">Testledd</th>
-<th scope="col" class="org-left">Svaralternativer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left"><b>Work intensification</b></td>
-<td class="org-left">it is increasingly rare to have enough time for work tasks</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Work intensification</b></td>
-<td class="org-left">it is increasingly harder to take time for breaks</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Work intensification</b></td>
-<td class="org-left">the time between the more intense work phases has decreased</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Work intensification</b></td>
-<td class="org-left">one has more often to do two or three things at once (such as eating lunch, writing emails, and talking on the phone)</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Work intensification</b></td>
-<td class="org-left">ever more work has to be completed by fewer and fewer employees</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Intensified career-related planning and decision-making demands</b></td>
-<td class="org-left">one is increasingly demanded to maintain one’s attractiveness for the job market (e.g., through advanced education, networking)</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Intensified career-related planning and decision-making demands</b></td>
-<td class="org-left">one’s own professional development increasingly requires to keep other alternatives open</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Intensified career-related planning and decision-making demands</b></td>
-<td class="org-left">one increasingly has to plan one’s professional career independently</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Intensified skill-related learning demands</b></td>
-<td class="org-left">one increasingly has to familiarize oneself with new work processes</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Intensified skill-related learning demands</b></td>
-<td class="org-left">one increasingly has to get used to new workflows</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Intensified skill-related learning demands</b></td>
-<td class="org-left">one has to use new work equipment (devices, programs, etc.) more often</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div id="outline-container-org8133d36" class="outline-4">
-<h4 id="org8133d36">Zoom Exhaustion &amp; Fatigue Scale</h4>
-<div class="outline-text-4" id="text-org8133d36">
-<table>
-<caption class="t-above"><span class="table-number">Table 6:</span> <b>Zoom Exhaustion &amp; Fatigue Scale</b> (Fauville et al., 2021, <a href="https://poseidon01.ssrn.com/delivery.php?ID=941086029119014010115090108002111030040035068060068038011067125081004083098004006121027055021115000042004088073126080010119122062049001061039120080116102000112064121021022063071002120107003089104113065120002027082124123090119064110003003096066077012117&amp;EXT=pdf&amp;INDEX=TRUE">link</a>)</caption>
-
-<colgroup>
-<col  class="org-left">
-
-<col  class="org-left">
-
-<col  class="org-left">
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Konsept</th>
-<th scope="col" class="org-left">Testledd</th>
-<th scope="col" class="org-left">Testledd, reformulert</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left"><b>General Fatigue</b></td>
-<td class="org-left">How tired do you feel after video conferencing?</td>
-<td class="org-left">Do you feel tired&#x2026;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>General Fatigue</b></td>
-<td class="org-left">How exhausted do you feel after video conferencing?</td>
-<td class="org-left">Do you feel exhausted&#x2026;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>General Fatigue</b></td>
-<td class="org-left">How mentally drained do you feel after video conferencing?</td>
-<td class="org-left">Do you feel mentally drained&#x2026;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Social Fatigue</b></td>
-<td class="org-left">How much do you tend to avoid social situations after video conferencing?</td>
-<td class="org-left">Do you tend to&#x2026;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Social Fatigue</b></td>
-<td class="org-left">How much do you want to be alone after video conferencing?</td>
-<td class="org-left">Do you want to be alone&#x2026;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Social Fatigue</b></td>
-<td class="org-left">How much do you need time by yourself after video conferencing?</td>
-<td class="org-left">Do you need time to yourself&#x2026;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Emotional Fatigue</b></td>
-<td class="org-left">How emotionally drained do you feel after video conferencing?</td>
-<td class="org-left">Do you feel emotionally drained&#x2026;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Emotional Fatigue</b></td>
-<td class="org-left">How irritable do you feel after video conferencing?</td>
-<td class="org-left">Do you feel irritable&#x2026;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Emotional Fatigue</b></td>
-<td class="org-left">How moody do you feel after video conferencing?</td>
-<td class="org-left">Do you feel moody&#x2026;</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div id="outline-container-org1c8fbea" class="outline-4">
-<h4 id="org1c8fbea">Workplace FoMO</h4>
-<div class="outline-text-4" id="text-org1c8fbea">
+</details>
+<details> <summary> Irritabilitet </summary>
 <p>
-<b>Instructions:</b> Please indicate your agreement with each statement while thinking of how you typically feel or feel on average when away (e.g., off duty) or disconnected (e.g., not available via email, text, or instant messaging devices) from work.
+<b>Veiledning:</b> Angi hvor ofte du har følt deg eller oppført deg på følgende måter i løpet av de siste to ukene, inkludert i dag.
 </p>
 
 <table>
-<caption class="t-above"><span class="table-number">Table 7:</span> <b>Workplace FoMO</b> (Budnick et al., 2020, <a href="https://www.sciencedirect.com/science/article/pii/S0747563219303735">link</a>)</caption>
+<caption class="t-above"><span class="table-number">Tabell 4</span> <b>The Brief Irritability Test (BITe)</b> (Holtzman et al., 2015, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4318695/">link</a>)</caption>
 
 <colgroup>
 <col  class="org-left">
@@ -649,139 +228,40 @@ font-family: sans-serif;
 </thead>
 <tbody>
 <tr>
-<td class="org-left"><b>Workplace FoMO</b></td>
-<td class="org-left">1. I worry that I will miss out on networking opportunities that my coworkers will have.</td>
-<td class="org-left">1 = Strongly disagree; 2 = Disagree; 3 = Neither agree nor disagree; 4 = Agree; 5 = Strongly agree</td>
+<td class="org-left">Irritabilitet</td>
+<td class="org-left">1. Jeg har vært gretten</td>
+<td class="org-left">1 = aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte, 6 = alltid</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Workplace FoMO</b></td>
-<td class="org-left">5. I get anxious that I will miss out on an opportunity to make important business connections.</td>
-<td class="org-left">1 = Strongly disagree; 2 = Disagree; 3 = Neither agree nor disagree; 4 = Agree; 5 = Strongly agree</td>
+<td class="org-left">Irritabilitet</td>
+<td class="org-left">2. Jeg har følt at jeg kan komme til å klikke</td>
+<td class="org-left">1 = aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte, 6 = alltid</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Workplace FoMO</b></td>
-<td class="org-left">6. I worry that I might miss out on valuable work-related information.</td>
-<td class="org-left">1 = Strongly disagree; 2 = Disagree; 3 = Neither agree nor disagree; 4 = Agree; 5 = Strongly agree</td>
+<td class="org-left">Irritabilitet</td>
+<td class="org-left">3. Andre mennesker har gått meg på nervene</td>
+<td class="org-left">1 = aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte, 6 = alltid</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Workplace FoMO</b></td>
-<td class="org-left">7. I worry that I will miss out on important information that is relevant to my job.</td>
-<td class="org-left">1 = Strongly disagree; 2 = Disagree; 3 = Neither agree nor disagree; 4 = Agree; 5 = Strongly agree</td>
+<td class="org-left">Irritabilitet</td>
+<td class="org-left">4. Ting har plaget meg mer enn vanlig</td>
+<td class="org-left">1 = aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte, 6 = alltid</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Workplace FoMO</b></td>
-<td class="org-left">9. I worry I will not know what is happening at work.</td>
-<td class="org-left">1 = Strongly disagree; 2 = Disagree; 3 = Neither agree nor disagree; 4 = Agree; 5 = Strongly agree</td>
+<td class="org-left">Irritabilitet</td>
+<td class="org-left">5. Jeg har følt meg irritabel</td>
+<td class="org-left">1 = aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte, 6 = alltid</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org6a0eb1d" class="outline-3">
-<h3 id="org6a0eb1d">Digital samhandling</h3>
-<div class="outline-text-3" id="text-org6a0eb1d">
-</div>
-<div id="outline-container-orgf680919" class="outline-4">
-<h4 id="orgf680919">Cyber-incivility</h4>
-<div class="outline-text-4" id="text-orgf680919">
-<table rules="cols" frame="border">
-<caption class="t-above"><span class="table-number">Table 8:</span> <b>Inventory of Cyberbullying Acts at Work (ICA-W)</b>, Vranjes et al., 2017, <a href="https://www.tandfonline.com/doi/abs/10.1080/1359432X.2017.1363185?needAccess=true">link</a></caption>
-
-<colgroup>
-<col  class="org-left">
-
-<col  class="org-left">
-
-<col  class="org-left">
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Konsept</th>
-<th scope="col" class="org-left">Testledd</th>
-<th scope="col" class="org-left">Svaralternativer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left"><b>Work related</b></td>
-<td class="org-left">1. Your emails, phone calls or messages are ignored at work.</td>
-<td class="org-left">1 never, 2 one time, 3 monthly, 4 weekly, 5 daily</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Work related</b></td>
-<td class="org-left">2. Your emails are forwarded to third parties in order to harm you.</td>
-<td class="org-left">1 never, 2 one time, 3 monthly, 4 weekly, 5 daily</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Work related</b></td>
-<td class="org-left">3. Your work is criticized publicly by means of ICTs</td>
-<td class="org-left">1 never, 2 one time, 3 monthly, 4 weekly, 5 daily</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Work related</b></td>
-<td class="org-left">4. Somebody is withholding e-mails or files you need,</td>
-<td class="org-left">1 never, 2 one time, 3 monthly, 4 weekly, 5 daily</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Person related</b></td>
-<td class="org-left">5. Rumors or gossips are being spread about you by means of ICTs.</td>
-<td class="org-left">1 never, 2 one time, 3 monthly, 4 weekly, 5 daily</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Person related</b></td>
-<td class="org-left">6. You are being insulted, threatened or intimidated by means of ICTs</td>
-<td class="org-left">1 never, 2 one time, 3 monthly, 4 weekly, 5 daily</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Person related</b></td>
-<td class="org-left">7. Constant remarks are being made about you and your private life by means of ICTs.</td>
-<td class="org-left">1 never, 2 one time, 3 monthly, 4 weekly, 5 daily</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Intrusion</b></td>
-<td class="org-left">8. Your personal information is hacked and used to harm you.</td>
-<td class="org-left">1 never, 2 one time, 3 monthly, 4 weekly, 5 daily</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Intrusion</b></td>
-<td class="org-left">9. Somebody takes over your identity.</td>
-<td class="org-left">1 never, 2 one time, 3 monthly, 4 weekly, 5 daily</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Intrusion</b></td>
-<td class="org-left">10 Personal information about you is shared online or distributed via messages to others</td>
-<td class="org-left">1 never, 2 one time, 3 monthly, 4 weekly, 5 daily</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-orgd129cb2" class="outline-2">
-<h2 id="orgd129cb2">POTENSIELLE VIRKNINGER AV ARBEIDSFORHOLD</h2>
-<div class="outline-text-2" id="text-orgd129cb2">
-</div>
-<div id="outline-container-org0b3314a" class="outline-3">
-<h3 id="org0b3314a">Organizational commitment</h3>
-<div class="outline-text-3" id="text-org0b3314a">
+</details>
+<details> <summary> Arbeidsrelatert grubling (ruminering) (WRRQ) </summary>
 <table>
-<caption class="t-above"><span class="table-number">Table 9:</span> <b>Organizational commitment</b> (QPS, <a href="https://www.qps-nordic.org/en/doc/QPSNordic_questionnaire.pdf">link</a>)</caption>
+<caption class="t-above"><span class="table-number">Tabell 5</span> <b>Work-related rumination questionnaire (WRRQ)</b> (Cropley et al., 2012, <a href="https://openresearch.surrey.ac.uk/esploro/outputs/journalArticle/The-relation-of-post-work-ruminative/99512990102346?institution=44SUR_INST#file-0">link</a>)</caption>
 
 <colgroup>
 <col  class="org-left">
@@ -799,119 +279,163 @@ font-family: sans-serif;
 </thead>
 <tbody>
 <tr>
-<td class="org-left"><b>Organizational commitment</b></td>
-<td class="org-left">To my friends I praise this organization a great place to work</td>
-<td class="org-left">disagree totally, disagree to some extent, indifferent, agree to some extent, agree totally</td>
+<td class="org-left">Affektiv grubling</td>
+<td class="org-left">Blir du anspent når du tenker på jobbrelaterte saker på fritiden?</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Organizational commitment</b></td>
-<td class="org-left">My values are very similar to the organization's values</td>
-<td class="org-left">disagree totally, disagree to some extent, indifferent, agree to some extent, agree totally</td>
+<td class="org-left">Affektiv grubling</td>
+<td class="org-left">Blir du irritert av å tenke på jobbrelaterte saker når du ikke er på jobb?</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Organizational commitment</b></td>
-<td class="org-left">This organization really inspires me to give my very best job performance</td>
-<td class="org-left">disagree totally, disagree to some extent, indifferent, agree to some extent, agree totally</td>
+<td class="org-left">Affektiv grubling</td>
+<td class="org-left">Irriterer du deg over jobbrelaterte saker når du ikke er på jobb?</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Affektiv grubling</td>
+<td class="org-left">Blir du sliten av å tenke på jobbrelaterte saker på fritiden?</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Affektiv grubling</td>
+<td class="org-left">Plages du av jobbrelaterte saker når du ikke er på jobb?</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Problemløsende grubling</td>
+<td class="org-left">Etter jobb har jeg en tendens til å tenke på hvordan jeg kan forbedre min innsats på jobb</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Problemløsende grubling</td>
+<td class="org-left">På fritiden hender det jeg revurderer noe jeg har gjort på jobb</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Problemløsende grubling</td>
+<td class="org-left">Tenker du på oppgaver som må gjøres på jobben neste dag?</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Problemløsende grubling</td>
+<td class="org-left">Jeg synes det å tenke på jobb på fritiden hjelper meg med å være kreativ</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Problemløsende grubling</td>
+<td class="org-left">Jeg finner løsninger på jobbrelaterte problemstillinger på fritiden</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Avkobling</td>
+<td class="org-left">Føler du deg ute av stand til å koble av fra jobb?</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Avkobling</td>
+<td class="org-left">Jeg klarer å slutte å tenke på jobbrelaterte saker på fritiden</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Avkobling</td>
+<td class="org-left">Synes du det er enkelt å koble av etter jobb?</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Avkobling</td>
+<td class="org-left">Jeg får meg selv til å koble av fra jobb så snart jeg drar</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Avkobling</td>
+<td class="org-left">Legger du fra deg jobbrelaterte saker når du drar fra jobb?</td>
+<td class="org-left">1 = svært sjelden eller aldri, 2 = sjelden, 3 = noen ganger, 4 = ofte, 5 = svært ofte eller alltid</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div id="outline-container-orgf1d7141" class="outline-3">
-<h3 id="orgf1d7141">Utrecht Work Engagement Scale (UWES)</h3>
-<div class="outline-text-3" id="text-orgf1d7141">
-<table>
-<caption class="t-above"><span class="table-number">Table 10:</span> <b>Utrecht Work Engagement Scale (UWES)</b> (Schaufeli et al., 2001, <a href="https://link.springer.com/content/pdf/10.1023/A:1015630930326.pdf">link</a>)</caption>
-
-<colgroup>
-<col  class="org-left">
-
-<col  class="org-left">
-
-<col  class="org-left">
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Konsept</th>
-<th scope="col" class="org-left">Testledd</th>
-<th scope="col" class="org-left">Svaralternativer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left"><b>Vigor</b></td>
-<td class="org-left">1. At my work‚ I feel bursting with energy*</td>
-<td class="org-left">0 = Never‚ 1 = Almost never (A few times a year or less)‚ 2 = Rarely (Once a month or less)‚ 3 = Sometimes (A few times a month)‚ 4 = Often (Once a week)‚ 5 = Very often (A few times a week)‚ 6 = Always (Every day)</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Vigor</b></td>
-<td class="org-left">4. At my job‚ I feel strong and vigorous*</td>
-<td class="org-left">0 = Never‚ 1 = Almost never (A few times a year or less)‚ 2 = Rarely (Once a month or less)‚ 3 = Sometimes (A few times a month)‚ 4 = Often (Once a week)‚ 5 = Very often (A few times a week)‚ 6 = Always (Every day)</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Dedication</b></td>
-<td class="org-left">5. I am enthusiastic about my job*</td>
-<td class="org-left">0 = Never‚ 1 = Almost never (A few times a year or less)‚ 2 = Rarely (Once a month or less)‚ 3 = Sometimes (A few times a month)‚ 4 = Often (Once a week)‚ 5 = Very often (A few times a week)‚ 6 = Always (Every day)</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Dedication</b></td>
-<td class="org-left">7. My job inspires me*</td>
-<td class="org-left">0 = Never‚ 1 = Almost never (A few times a year or less)‚ 2 = Rarely (Once a month or less)‚ 3 = Sometimes (A few times a month)‚ 4 = Often (Once a week)‚ 5 = Very often (A few times a week)‚ 6 = Always (Every day)</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Vigor</b></td>
-<td class="org-left">8. When I get up in the morning‚ I feel like going to work*</td>
-<td class="org-left">0 = Never‚ 1 = Almost never (A few times a year or less)‚ 2 = Rarely (Once a month or less)‚ 3 = Sometimes (A few times a month)‚ 4 = Often (Once a week)‚ 5 = Very often (A few times a week)‚ 6 = Always (Every day)</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Absorption</b></td>
-<td class="org-left">9. I feel happy when I am working intensely*</td>
-<td class="org-left">0 = Never‚ 1 = Almost never (A few times a year or less)‚ 2 = Rarely (Once a month or less)‚ 3 = Sometimes (A few times a month)‚ 4 = Often (Once a week)‚ 5 = Very often (A few times a week)‚ 6 = Always (Every day)</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Dedication</b></td>
-<td class="org-left">10. I am proud on the work that I do*</td>
-<td class="org-left">0 = Never‚ 1 = Almost never (A few times a year or less)‚ 2 = Rarely (Once a month or less)‚ 3 = Sometimes (A few times a month)‚ 4 = Often (Once a week)‚ 5 = Very often (A few times a week)‚ 6 = Always (Every day)</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Absorption</b></td>
-<td class="org-left">11. I am immersed in my work*</td>
-<td class="org-left">0 = Never‚ 1 = Almost never (A few times a year or less)‚ 2 = Rarely (Once a month or less)‚ 3 = Sometimes (A few times a month)‚ 4 = Often (Once a week)‚ 5 = Very often (A few times a week)‚ 6 = Always (Every day)</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Absorption</b></td>
-<td class="org-left">14. I get carried away when I’m working*</td>
-<td class="org-left">0 = Never‚ 1 = Almost never (A few times a year or less)‚ 2 = Rarely (Once a month or less)‚ 3 = Sometimes (A few times a month)‚ 4 = Often (Once a week)‚ 5 = Very often (A few times a week)‚ 6 = Always (Every day)</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">* = Shortened version (UWES-9)</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div id="outline-container-org6e53df7" class="outline-3">
-<h3 id="org6e53df7">Cognitive stress, COPSOQ III</h3>
-<div class="outline-text-3" id="text-org6e53df7">
+</details>
+<details> <summary> Søvn </summary>
 <p>
-<b>Instruction:</b> These questions are about how you have been during the last 4 weeks.
+<b>Veiledning:</b> Hvor ofte <i>i løpet av den siste måneden</i> opplevde du…:
 </p>
 
 <table>
-<caption class="t-above"><span class="table-number">Table 11:</span> <b>Cognitive stress, COPSOQ III</b> (<a href="https://www.copsoq-network.org/assets/Uploads/COPSOQ-network-guidelines-an-questionnaire-COPSOQ-III-180821.pdf">link</a>)</caption>
+<caption class="t-above"><span class="table-number">Tabell 6</span> <b>Jenkins Sleep Scale</b> (Jenkins et al., 1988, <a href="https://www.sciencedirect.com/science/article/abs/pii/0895435688901382">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Søvnproblemer</td>
+<td class="org-left">&#x2026;vansker med å sovne?</td>
+<td class="org-left">aldri, 1-3 dager, 4-7 dager, 8-14 dager, 15-21 dager, 22-31 dager</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Søvnproblemer</td>
+<td class="org-left">&#x2026;å våkne flere ganger om natten?</td>
+<td class="org-left">aldri, 1-3 dager, 4-7 dager, 8-14 dager, 15-21 dager, 22-31 dager</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Søvnproblemer</td>
+<td class="org-left">&#x2026;problemer med å holde deg i søvn (inkludert å våkne altfor tidlig)?</td>
+<td class="org-left">aldri, 1-3 dager, 4-7 dager, 8-14 dager, 15-21 dager, 22-31 dager</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Søvnproblemer</td>
+<td class="org-left">&#x2026;å våkne etter din vanlige mengde søvn og føle deg trøtt og utslitt?</td>
+<td class="org-left">aldri, 1-3 dager, 4-7 dager, 8-14 dager, 15-21 dager, 22-31 dager</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details> <summary> Helserelatert atferd </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 7</span> <b>SPZZ Positive Health Behaviors Scale</b> (WoynarowskaSołdam &amp; Węziak-Białowolska, 2012, <a href="https://journals.sagepub.com/doi/pdf/10.1177/1557988319899236">link</a>)</caption>
 
 <colgroup>
 <col  class="org-left">
@@ -929,41 +453,144 @@ font-family: sans-serif;
 </thead>
 <tbody>
 <tr>
-<td class="org-left"><b>Cognitive Stress (CS)</b></td>
-<td class="org-left">How often have you had problems concentrating?</td>
-<td class="org-left">Always (100); Often (75); Sometimes (50); Seldom (25); Never/hardly ever (0)</td>
+<td class="org-left">Ernæring</td>
+<td class="org-left">1. Jeg spiser minst tre måltider om dagen til omtrent samme tid på dagen.</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Cognitive Stress (CS)</b></td>
-<td class="org-left">How often have you found it difficult to think clearly?</td>
-<td class="org-left">Always (100); Often (75); Sometimes (50); Seldom (25); Never/hardly ever (0)</td>
+<td class="org-left">Ernæring</td>
+<td class="org-left">2. Jeg spiser frokost hjemme hver morgen (dvs. mer enn et glass melk, te eller annen drikke)</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Cognitive Stress (CS)</b></td>
-<td class="org-left">How often have you had difficulty in taking decisions?</td>
-<td class="org-left">Always (100); Often (75); Sometimes (50); Seldom (25); Never/hardly ever (0)</td>
+<td class="org-left">Ernæring</td>
+<td class="org-left">3. Jeg spiser minst én frukt eller mer om dagen</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Cognitive Stress (CS)</b></td>
-<td class="org-left">How often have you had difficulty with remembering?</td>
-<td class="org-left">Always (100); Often (75); Sometimes (50); Seldom (25); Never/hardly ever (0)</td>
+<td class="org-left">Ernæring</td>
+<td class="org-left">4. Jeg spiser grønnsaker minst én gang hver dag eller oftere</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Ernæring</td>
+<td class="org-left">5. Jeg drikker minst to glass melk, kefir eller yoghurt hver dag</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Ernæring</td>
+<td class="org-left">6. Jeg begrenser inntaket av animalsk fett</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Ernæring</td>
+<td class="org-left">7. Jeg unngår for mye salt</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Ernæring</td>
+<td class="org-left">8. Jeg begrenser inntaket av søtsaker</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Ernæring</td>
+<td class="org-left">9. Jeg unngår å småspise mellom måltider</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Fysisk aktivitet</td>
+<td class="org-left">10. Jeg gjennomfører minst 30 minutter moderat eller tung fysisk aktivitet daglig (f.eks. jogging, rask gange, idrett, hage- eller gårdsarbeid)</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Fysisk aktivitet</td>
+<td class="org-left">11. Jeg deltar i organisert fysisk aktivitet eller trening minst én gang i uken</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Fysisk aktivitet</td>
+<td class="org-left">31. Jeg øker mengden aktivitet og fysisk innsats i hverdagen (f.eks. når det er mulig går jeg i stedet for å kjøre, tar buss eller trikk, eller bruker trappene i stedet for heisen)</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Fysisk aktivitet</td>
+<td class="org-left">12. Jeg ser ikke mer enn 2-3 timer på TV daglig</td>
+<td class="org-left">Nesten alltid, Ofte, Noen ganger, Nesten aldri</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div id="outline-container-org681061b" class="outline-3">
-<h3 id="org681061b">The Brief Irritability Test (BITe)</h3>
-<div class="outline-text-3" id="text-org681061b">
+</details>
+<details> <summary> Selvopplevd utvikling og vekst i jobben </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 8</span> <b>Thriving at work</b> (Porath et al., 2011, <a href="https://deepblue.lib.umich.edu/bitstream/handle/2027.42/90225/job756.pdf?sequence=1">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Vitalitet</td>
+<td class="org-left">Jeg føler meg levende og energisk</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Vitalitet</td>
+<td class="org-left">Jeg har energi og pågangsmot</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Vitalitet</td>
+<td class="org-left">Jeg føler meg ikke veldig energisk (R)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Vitalitet</td>
+<td class="org-left">Jeg føler meg påskrudd og våken</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Vitalitet</td>
+<td class="org-left">Jeg gleder meg til hver dag</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details> <summary> Selvvurdert prestasjon </summary>
+
 <p>
-<b>Instructions:</b> Please indicate how often you have felt or behaved in the following ways, during the past two weeks, including today.
+<b>Veiledning:</b> I løpet av de siste 3 månedene&#x2026;
 </p>
 
 <table>
-<caption class="t-above"><span class="table-number">Table 12:</span> <b>The Brief Irritability Test (BITe)</b> (Holtzman et al., 2015, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4318695/">link</a>)</caption>
+<caption class="t-above"><span class="table-number">Tabell 9</span> <b>Individual work performance Questionnaire (IWPQ)</b> (Koopmans et al., 2013, <a href="https://research.vumc.nl/ws/portalfiles/portal/457054/chapter+4+development+of+the+iwpq.pdf">link</a>, improved: <a href="https://postprint.nivel.nl/PPpp5641.pdf?">link</a>)</caption>
 
 <colgroup>
 <col  class="org-left">
@@ -981,43 +608,129 @@ font-family: sans-serif;
 </thead>
 <tbody>
 <tr>
-<td class="org-left"><b>Irritability</b></td>
-<td class="org-left">1. I have been grumpy</td>
-<td class="org-left">1 = never, 2 = rarely, 3 = sometimes, 4 = often, 5 = very often, 6 = always</td>
+<td class="org-left">Oppgaveutførelse</td>
+<td class="org-left">har jeg klart å planlegge arbeidet mitt slik at det ble fullført i tide</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Irritability</b></td>
-<td class="org-left">2. I have been feeling like I might snap</td>
-<td class="org-left">2 = never, 2 = rarely, 3 = sometimes, 4 = often, 5 = very often, 6 = always</td>
+<td class="org-left">Oppgaveutførelse</td>
+<td class="org-left">har planleggingen min vært optimal</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Irritability</b></td>
-<td class="org-left">3. Other people have been getting on my nerves</td>
-<td class="org-left">3 = never, 2 = rarely, 3 = sometimes, 4 = often, 5 = very often, 6 = always</td>
+<td class="org-left">Oppgaveutførelse</td>
+<td class="org-left">har jeg vært oppmerksom på hvilke resultater jeg skulle oppnå i arbeidet mitt</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Irritability</b></td>
-<td class="org-left">4. Things have been bothering me more than they normally do</td>
-<td class="org-left">4 = never, 2 = rarely, 3 = sometimes, 4 = often, 5 = very often, 6 = always</td>
+<td class="org-left">Oppgaveutførelse</td>
+<td class="org-left">har jeg klart å skille mellom store og små problemer på jobben</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Irritability</b></td>
-<td class="org-left">5. I have been feeling irritable</td>
-<td class="org-left">5 = never, 2 = rarely, 3 = sometimes, 4 = often, 5 = very often, 6 = always</td>
+<td class="org-left">Oppgaveutførelse</td>
+<td class="org-left">har jeg klart å gjøre jobben min uten å bruke for mye tid og krefter</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Oppgaveutførelse</td>
+<td class="org-left">har samarbeidet med andre vært svært produktivt</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontekstuell prestasjon</td>
+<td class="org-left">har jeg påtatt meg ekstra ansvar</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontekstuell prestasjon</td>
+<td class="org-left">har jeg startet nye oppgaver selv når jeg var ferdig med de opprinnelige</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontekstuell prestasjon</td>
+<td class="org-left">har jeg påtatt meg utfordrende arbeidsoppgaver når det var en mulighet</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontekstuell prestasjon</td>
+<td class="org-left">har jeg jobbet med å holde jobbkunnskapen min oppdatert</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontekstuell prestasjon</td>
+<td class="org-left">har jeg jobbet med å holde jobbferdighetene mine oppdaterte</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontekstuell prestasjon</td>
+<td class="org-left">har jeg kommet med kreative løsninger på nye problemer</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontekstuell prestasjon</td>
+<td class="org-left">har jeg fortsatt å lete etter nye utfordringer i jobben min</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontekstuell prestasjon</td>
+<td class="org-left">har jeg deltatt aktivt i jobbmøter</td>
+<td class="org-left">1 Sjelden, 2 Iblant, 3 Jevnlig, 4 Ofte, 5 Alltid</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontraproduktiv oppførsel på jobb</td>
+<td class="org-left">har jeg klaget over uviktige saker på jobben</td>
+<td class="org-left">1 Aldri, 2 Sjelden, 3 Iblant, 4 Jevnlig, 5 Ofte</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontraproduktiv oppførsel på jobb</td>
+<td class="org-left">har jeg gjort problemer på jobben større enn de var</td>
+<td class="org-left">1 Aldri, 2 Sjelden, 3 Iblant, 4 Jevnlig, 5 Ofte</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontraproduktiv oppførsel på jobb</td>
+<td class="org-left">har jeg fokusert på de negative sidene ved en arbeidssituasjon i stedet for de positive sidene</td>
+<td class="org-left">1 Aldri, 2 Sjelden, 3 Iblant, 4 Jevnlig, 5 Ofte</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontraproduktiv oppførsel på jobb</td>
+<td class="org-left">har jeg snakket med kolleger om de negative sidene ved jobben min</td>
+<td class="org-left">1 Aldri, 2 Sjelden, 3 Iblant, 4 Jevnlig, 5 Ofte</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontraproduktiv oppførsel på jobb</td>
+<td class="org-left">har jeg snakket med folk utenfor organisasjonen om de negative sidene ved jobben min</td>
+<td class="org-left">1 Aldri, 2 Sjelden, 3 Iblant, 4 Jevnlig, 5 Ofte</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div id="outline-container-org0c49b3b" class="outline-3">
-<h3 id="org0c49b3b">Work-related rumination questionnaire (WRRQ)</h3>
-<div class="outline-text-3" id="text-org0c49b3b">
+</details>
+</details>
+<button id="btnExpandHideAllDetails" onclick="openAll()" style="color:white;background-color:#87B3E6;">Se alt</button>
+
+<details> <summary> NYE ARBEIDSMÅTER </summary>
+
+<details> <summary> Skala for digitale stressorer </summary>
 <table>
-<caption class="t-above"><span class="table-number">Table 13:</span> <b>Work-related rumination questionnaire (WRRQ)</b> (Cropley et al., 2012, <a href="https://openresearch.surrey.ac.uk/esploro/outputs/journalArticle/The-relation-of-post-work-ruminative/99512990102346?institution=44SUR_INST#file-0">link</a>)</caption>
+<caption class="t-above"><span class="table-number">Tabell 10</span> Digital stressors scale (DSS) (Fischer et al., 2021,  <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2021.607598/full">link</a>)</caption>
 
 <colgroup>
 <col  class="org-left">
@@ -1035,111 +748,188 @@ font-family: sans-serif;
 </thead>
 <tbody>
 <tr>
-<td class="org-left"><b>Affective Rumination</b></td>
-<td class="org-left">Do you become tense when you think about workrelated issues during your free time?</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Affective Rumination</b></td>
-<td class="org-left">Are you annoyed by thinking about work-related issues when not at work?</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Overbelastning</td>
+<td class="org-left">På grunn av IKT har jeg for mye å gjøre.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Affective Rumination</b></td>
-<td class="org-left">Are you irritated by work issues when not at work?</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Overbelastning</td>
+<td class="org-left">På grunn av IKT har jeg for mange ulike ting å gjøre på jobben.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Affective Rumination</b></td>
-<td class="org-left">Do you become fatigued by thinking about workrelated issues during your free time?</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Overbelastning</td>
+<td class="org-left">IKT gjør det for enkelt for andre å sende meg tilleggsoppgaver.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Affective Rumination</b></td>
-<td class="org-left">Are you troubled by work-related issues when not at work?</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Overbelastning</td>
+<td class="org-left">Jeg har aldri tid til overs fordi timeplanen min er for tett på grunn av IKT.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Problem-Solving Rumination</b></td>
-<td class="org-left">After work I tend to think of how I can improve my work-related performance</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Overbelastning</td>
+<td class="org-left">Det kommer en konstant strøm av arbeidsrelatert informasjon gjennom IKT som jeg rett og slett ikke klarer å følge med på.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Problem-Solving Rumination</b></td>
-<td class="org-left">In my free time I find myself re-evaluating something I have done at work</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Teknisk støtte</td>
+<td class="org-left">Jeg må bekymre meg for IKT-relaterte problemer fordi organisasjonen vår ikke tilbyr nok støtte til å løse dem.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Problem-Solving Rumination</b></td>
-<td class="org-left">Do you think about tasks that need to be done at work the next day?</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Teknisk støtte</td>
+<td class="org-left">Når det gjelder IKT-relaterte problemer, skjer det for ofte at det ikke er nok brukerstøtte tilgjengelig på jobb.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Problem-Solving Rumination</b></td>
-<td class="org-left">I find thinking about work during my free time helps me to be creative</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Teknisk støtte</td>
+<td class="org-left">Det skjer for ofte at teknisk brukerstøtte ikke er tilgjengelig når jeg trenger det.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Problem-Solving Rumination</b></td>
-<td class="org-left">I find solutions to work-related problems in my free time</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Teknisk støtte</td>
+<td class="org-left">Jeg må ofte vente lenge fordi tekniske problemer ikke kan løses på en tilfredsstillende måte i vår organisasjon.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Detachment</b></td>
-<td class="org-left">Do you feel unable to switch off from work?</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Teknisk støtte</td>
+<td class="org-left">Jeg er redd for at tekniske problemer jeg har på jobben ikke skal kunne løses av noen andre på jobb.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Detachment</b></td>
-<td class="org-left">I am able to stop thinking about work-related issues in my free time</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Nytteverdi</td>
+<td class="org-left">Jeg synes ikke funksjonene i IKT jeg bruker er godt nok tilpasset kravene i arbeidet mitt.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Detachment</b></td>
-<td class="org-left">Do you find it easy to unwind after work?</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Nytteverdi</td>
+<td class="org-left">Jeg synes ikke  IKT-verktøyene jeg har tilgang til på jobb er nyttige nok for arbeidsoppgavene mine.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Detachment</b></td>
-<td class="org-left">I make myself switch off from work as soon as I leave</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Nytteverdi</td>
+<td class="org-left">IKT-verktøyene jeg bruker på jobben har for mange funksjoner som jeg aldri har bruk for.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Detachment</b></td>
-<td class="org-left">Do you leave work issues behind when you leave work?</td>
-<td class="org-left">1 = very seldom or never, 2 = seldom, 3 = sometimes, 4 = often, 5 = very often or always</td>
+<td class="org-left">Nytteverdi</td>
+<td class="org-left">Det kreves for mange forskjellige systemer for å utføre oppgavene jeg må gjøre i løpet av en vanlig dag på jobb.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
+</tr>
+
+<tr>
+<td class="org-left">Nytteverdi</td>
+<td class="org-left">Jeg mener at det meste av IKT jeg har tilgang til på jobben ikke er nyttig nok og at jeg kunne jobbet uten det.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
+</tr>
+
+<tr>
+<td class="org-left">Upålitelighet</td>
+<td class="org-left">Jeg opplever altfor ofte uventet oppførsel av IKT-verktøy jeg bruker på jobben (f.eks. systemkrasj eller lang svartid).</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
+</tr>
+
+<tr>
+<td class="org-left">Upålitelighet</td>
+<td class="org-left">Jeg taper for mye tid på grunn av tekniske feil.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
+</tr>
+
+<tr>
+<td class="org-left">Upålitelighet</td>
+<td class="org-left">Jeg bruker for mye tid på å prøve å fikse tekniske feil.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
+</tr>
+
+<tr>
+<td class="org-left">Upålitelighet</td>
+<td class="org-left">For mye av arbeidstiden min kastes bort på å håndtere upåliteligheten til IKT-verktøy.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
+</tr>
+
+<tr>
+<td class="org-left">Upålitelighet</td>
+<td class="org-left">De daglige problemene med IKT (f.eks. trege programmer eller uventet oppførsel) plager meg veldig.</td>
+<td class="org-left">1 Helt uenig, 2, 3, 4, 5, 6, 7 Helt enig</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div id="outline-container-orgd21e245" class="outline-3">
-<h3 id="orgd21e245">Jenkins Sleep Scale</h3>
-<div class="outline-text-3" id="text-orgd21e245">
+</details>
+<details> <summary> Utvidet jobbtilgjengelighet </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 11</span> <b>Extended work availability</b> (Brauner et al., 2021, <a href="https://www.tandfonline.com/doi/full/10.1080/02678373.2021.1969475">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Forventninger til tilgjengelighet</td>
+<td class="org-left">Arbeidsplassen min forventer at jeg er tilgjengelig for jobbrelaterte saker på fritiden min</td>
+<td class="org-left">1 Stemmer ikke i det hele tatt, 2, 3, 4, 5 Stemmer helt</td>
+</tr>
+
+<tr>
+<td class="org-left">Kontakthyppighet</td>
+<td class="org-left">Hvor ofte blir du kontaktet av kolleger, ledere eller kunder privat/når du ikke er på jobb?</td>
+<td class="org-left">Ofte, noen ganger, sjelden, aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Opplevd nødvendighet av ikke-regulert, utvidet jobbtilgjengelighet</td>
+<td class="org-left">Hvor ofte synes du det er nødvendig å være tilgjengelig for jobbrelaterte saker på fritiden?</td>
+<td class="org-left">Ofte, noen ganger, sjelden, aldri</td>
+</tr>
+
+<tr>
+<td class="org-left">Opplevd rimelighet av ikke-regulert, utvidet jobbtilgjengelighet</td>
+<td class="org-left">Hvor ofte synes du personlig det er rimelig å være tilgjengelig for jobbrelaterte saker på fritiden?</td>
+<td class="org-left">Ofte, noen ganger, sjelden, aldri</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details> <summary> Skille mellom jobb og privatliv </summary>
+
 <p>
-<b>Instruction:</b> How often <i>in the past month</i> did you&#x2026;:
+<b>Veiledning:</b> Følgende spørsmål handler om hvordan du for øyeblikket håndterer skillet mellom jobb og fritid. Setningene nedenfor består av to motsatte utsagn. Angi for hver setning hva som samsvarer med din egen væremåte. Jo nærmere en uttalelse du plasserer markøren, jo mer gjenspeiler denne uttalelsen din egen væremåte. Det finnes ikke riktige eller gale svar.”
 </p>
 
 <table>
-<caption class="t-above"><span class="table-number">Table 14:</span> <b>Jenkins Sleep Scale</b> (Jenkins et al., 1988, <a href="https://www.sciencedirect.com/science/article/abs/pii/0895435688901382">link</a>)</caption>
+<caption class="t-above"><span class="table-number">Tabell 12</span> <b>Work-Life Boundary Enactment Scale</b> (Wepfer et al., 2018, <a href="https://link.springer.com/content/pdf/10.1007/s10869-017-9520-y.pdf">link</a>)</caption>
 
 <colgroup>
-<col  class="org-left">
-
 <col  class="org-left">
 
 <col  class="org-left">
@@ -1148,42 +938,64 @@ font-family: sans-serif;
 <tr>
 <th scope="col" class="org-left">Konsept</th>
 <th scope="col" class="org-left">Testledd</th>
-<th scope="col" class="org-left">Svaralternativer</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="org-left"><b>Sleep problems</b></td>
-<td class="org-left">&#x2026;have trouble falling asleep?</td>
-<td class="org-left">never, 1-3 days, 4-7 days, 8-14 days, 15-21 days, 22-31 days</td>
+<td class="org-left">Segmentering/integrering arbeid-privatliv</td>
+<td class="org-left">Jeg tar aldri med meg jobb hjem.  - Jeg tar ofte med meg jobb hjem.</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Sleep problems</b></td>
-<td class="org-left">&#x2026;wake up several times per night?</td>
-<td class="org-left">never, 1-3 days, 4-7 days, 8-14 days, 15-21 days, 22-31 days</td>
+<td class="org-left">Segmentering/integrering arbeid-privatliv</td>
+<td class="org-left">Jeg forlater alltid arbeidsplassen min i tide.  - Jeg forlater ofte arbeidsplassen min sent.</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Sleep problems</b></td>
-<td class="org-left">&#x2026;have trouble staying asleep (including waking far too early)?</td>
-<td class="org-left">never, 1-3 days, 4-7 days, 8-14 days, 15-21 days, 22-31 days</td>
+<td class="org-left">Segmentering/integrering arbeid-privatliv</td>
+<td class="org-left">Jeg jobber aldri etter ordinær arbeidstid eller i helgene.  - Jeg jobber ofte etter ordinær arbeidstid eller i helgene.</td>
 </tr>
 
 <tr>
-<td class="org-left"><b>Sleep problems</b></td>
-<td class="org-left">&#x2026;wake up after your usuak amount of sleep feeling tired and worn out?</td>
-<td class="org-left">never, 1-3 days, 4-7 days, 8-14 days, 15-21 days, 22-31 days</td>
+<td class="org-left">Segmentering/integrering arbeid-privatliv</td>
+<td class="org-left">Jeg tenker aldri på jobb når jeg har fri. - Jeg tenker ofte på jobb når jeg har fri.</td>
+</tr>
+
+<tr>
+<td class="org-left">Segmentering/integrering arbeid-privatliv</td>
+<td class="org-left">Jeg kommuniserer aldri med folk fra jobben på fritiden.  - Jeg kommuniserer ofte med folk fra jobben på fritiden.</td>
+</tr>
+
+<tr>
+<td class="org-left">Segmentering/integrering privatliv-arbeid</td>
+<td class="org-left">Jeg gjør aldri oppgaver som ikke er jobbrelaterte mens jeg er fysisk på arbeidsplassen min.  - Jeg gjør ofte oppgaver som ikke er jobbrelaterte mens jeg er fysisk på arbeidsplassen min.</td>
+</tr>
+
+<tr>
+<td class="org-left">Segmentering/integrering privatliv-arbeid</td>
+<td class="org-left">Jeg har aldri muligheten til å komme sent eller dra tidlig for å kunne gjøre ikke-jobbrelaterte oppgaver.  - Jeg har ofte mulighet til å komme sent eller dra tidlig for å kunne gjøre ikke-jobbrelaterte oppgaver.</td>
+</tr>
+
+<tr>
+<td class="org-left">Segmentering/integrering privatliv-arbeid</td>
+<td class="org-left">Jeg gjør aldri oppgaver som ikke er jobbrelaterte i arbeidstiden.  - Jeg gjør ofte oppgaver som ikke er jobbrelaterte i arbeidstiden.</td>
+</tr>
+
+<tr>
+<td class="org-left">Segmentering/integrering privatliv-arbeid</td>
+<td class="org-left">Jeg tenker aldri på oppgaver som ikke er jobbrelaterte mens jeg er på jobb.  - Jeg tenker ofte på oppgaver som ikke er jobbrelaterte mens jeg er på jobb.</td>
+</tr>
+
+<tr>
+<td class="org-left">Segmentering/integrering privatliv-arbeid</td>
+<td class="org-left">Jeg kommuniserer aldri med familie og venner mens jeg er på jobb.  - Jeg kommuniserer ofte med familie og venner mens jeg er på jobb.</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div id="outline-container-orga58fd62" class="outline-3">
-<h3 id="orga58fd62">Health behaviors</h3>
-<div class="outline-text-3" id="text-orga58fd62">
+</details>
+<details> <summary> Avbrytelser og forstyrrelser i arbeidet </summary>
 <table>
-<caption class="t-above"><span class="table-number">Table 15:</span> <b>SPZZ Positive Health Behaviors Scale</b> (WoynarowskaSołdam &amp; Węziak-Białowolska, 2012, <a href="https://journals.sagepub.com/doi/pdf/10.1177/1557988319899236">link</a>)</caption>
+<caption class="t-above"><span class="table-number">Tabell 13</span> <b>Interruptions; Short Questionnaire for Job Analysis</b> (Prümper et al., 1995, <a href="https://people.f3.htw-berlin.de/Professoren/Pruemper/instrumente/KFZA-Skalenkonstruktion.pdf">link</a>), <b>Organizational Constraints scale</b> (Spector &amp; Jex, <a href="https://paulspector.com/assessments/pauls-no-cost-assessments/organizational-constraints-scale-ocs/">link</a>)</caption>
 
 <colgroup>
 <col  class="org-left">
@@ -1201,360 +1013,1289 @@ font-family: sans-serif;
 </thead>
 <tbody>
 <tr>
-<td class="org-left">I. Nutrition</td>
-<td class="org-left">1. I eat at least three meals a day at similar times of the day</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
+<td class="org-left">Avbrytelser</td>
+<td class="org-left">"Jeg blir ofte avbrutt når jeg jobber med kjerneoppgavene mine (f.eks. på grunn av telefonsamtaler)"</td>
+<td class="org-left">1 Aldri, 2, 3, 4, 5 Alltid</td>
 </tr>
 
 <tr>
-<td class="org-left">I. Nutrition</td>
-<td class="org-left">2. I eat breakfast at home every morning (i.e., more than a glass of milk, tea, or other beverage)</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
+<td class="org-left">Avbrytelser</td>
+<td class="org-left">"Jeg klarer ikke å fokusere på én aktivitet fordi jeg blir avbrutt hele tiden”</td>
+<td class="org-left">1 Aldri, 2, 3, 4, 5 Alltid</td>
 </tr>
 
 <tr>
-<td class="org-left">I. Nutrition</td>
-<td class="org-left">3. I eat fruit at least once every day or more often</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
-</tr>
-
-<tr>
-<td class="org-left">I. Nutrition</td>
-<td class="org-left">4. I eat vegetables at least once every day or more often</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
-</tr>
-
-<tr>
-<td class="org-left">I. Nutrition</td>
-<td class="org-left">5. I drink at least two glasses of milk, kefir, or yoghurt every day</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
-</tr>
-
-<tr>
-<td class="org-left">I. Nutrition</td>
-<td class="org-left">6. I limit the consumption of animal fats</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
-</tr>
-
-<tr>
-<td class="org-left">I. Nutrition</td>
-<td class="org-left">7. I avoid excess salt</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
-</tr>
-
-<tr>
-<td class="org-left">I. Nutrition</td>
-<td class="org-left">8. I limit eating sweets</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
-</tr>
-
-<tr>
-<td class="org-left">I. Nutrition</td>
-<td class="org-left">9. I avoid snacking between meals</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
-</tr>
-
-<tr>
-<td class="org-left">V. Physical activity</td>
-<td class="org-left">29. I devote at least 30 min a day to activities related to moderate or heavy physical effort (e.g., jogging, brisk walking, sports, gardening, or farm work)</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
-</tr>
-
-<tr>
-<td class="org-left">V. Physical activity</td>
-<td class="org-left">30. I attend organized physical activities or training at least once a week</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
-</tr>
-
-<tr>
-<td class="org-left">V. Physical activity</td>
-<td class="org-left">31. I increase the amount of activity and physical effort in everyday life (e.g., when possible, I walk instead of driving, taking a bus or tram; I use the stairs instead of lifts)</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
-</tr>
-
-<tr>
-<td class="org-left">V. Physical activity</td>
-<td class="org-left">32. I watch TV no longer than 2–3 hr a day</td>
-<td class="org-left">Almost always, Frequently, Sometimes, Almost never</td>
+<td class="org-left">Avbrytelser</td>
+<td class="org-left">"Hvor ofte synes du det er vanskelig eller umulig å gjøre jobben din på grunn av avbrytelser fra andre mennesker?”</td>
+<td class="org-left">1 Aldri, 2, 3, 4, 5 Alltid</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-
-<div id="outline-container-orge228854" class="outline-3">
-<h3 id="orge228854">Thriving at work</h3>
-<div class="outline-text-3" id="text-orge228854">
-<table>
-<caption class="t-above"><span class="table-number">Table 16:</span> <b>Thriving at work</b> (second-order factor) (Porath et al., 2011, <a href="https://deepblue.lib.umich.edu/bitstream/handle/2027.42/90225/job756.pdf?sequence=1">link</a>)</caption>
-
-<colgroup>
-<col  class="org-left">
-
-<col  class="org-left">
-
-<col  class="org-left">
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Konsept</th>
-<th scope="col" class="org-left">Testledd</th>
-<th scope="col" class="org-left">Svaralternativer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left"><b>Vitality latent factor</b></td>
-<td class="org-left">I feel alive and vital</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Vitality latent factor</b></td>
-<td class="org-left">I have energy and spirit</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Vitality latent factor</b></td>
-<td class="org-left">I do not feel very energetic (R)</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Vitality latent factor</b></td>
-<td class="org-left">I feel alert and awake</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Vitality latent factor</b></td>
-<td class="org-left">I am looking forward to each new day</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div id="outline-container-orge5bb01d" class="outline-3">
-<h3 id="orge5bb01d">Self-assesed work performance</h3>
-<div class="outline-text-3" id="text-orge5bb01d">
-<table>
-<caption class="t-above"><span class="table-number">Table 17:</span> <b>Individual work performance Questionnaire (IWPQ)</b> (Koopmans et al., 2013, <a href="https://research.vumc.nl/ws/portalfiles/portal/457054/chapter+4+development+of+the+iwpq.pdf">link</a>, improved: <a href="https://postprint.nivel.nl/PPpp5641.pdf?">link</a>)</caption>
-
-<colgroup>
-<col  class="org-left">
-
-<col  class="org-left">
-
-<col  class="org-left">
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Konsept</th>
-<th scope="col" class="org-left">Testledd</th>
-<th scope="col" class="org-left">Svaralternativer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">In the past 3 months&#x2026;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Task performance</b></td>
-<td class="org-left">I managed to plan my work so that it was done on time</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Task performance</b></td>
-<td class="org-left">My planning was optimal</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Task performance</b></td>
-<td class="org-left">I kept in mind the results that I had to achieve in my work</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Task performance</b></td>
-<td class="org-left">I was able to separate main issues from side issues at work</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Task performance</b></td>
-<td class="org-left">I was able to perform my work well with minimal time and effort</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Task performance</b></td>
-<td class="org-left">Collaboration with others was very productive</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Contextual performance</b></td>
-<td class="org-left">I took on extra responsibilities</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Contextual performance</b></td>
-<td class="org-left">I started new tasks myself, when my old ones were finished</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Contextual performance</b></td>
-<td class="org-left">I took on challenging work tasks, when available</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Contextual performance</b></td>
-<td class="org-left">I worked at keeping my job knowledge up-to-date</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Contextual performance</b></td>
-<td class="org-left">I worked at keeping my job skills up-to-date</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Contextual performance</b></td>
-<td class="org-left">I came up with creative solutions to new problems</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Contextual performance</b></td>
-<td class="org-left">I kept looking for new challenges in my job</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Contextual performance</b></td>
-<td class="org-left">I actively participated in work meetings</td>
-<td class="org-left">seldom, sometimes, frequently, often, always</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Counterproductive work behavior scale</b></td>
-<td class="org-left">I complained about unimportant matters at work</td>
-<td class="org-left">never, seldom, sometimes, frequently, often</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Counterproductive work behavior scale</b></td>
-<td class="org-left">I made problems greater than they were at work</td>
-<td class="org-left">never, seldom, sometimes, frequently, often</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Counterproductive work behavior scale</b></td>
-<td class="org-left">I focused on the negative aspects of a work situation, instead of the positive aspects</td>
-<td class="org-left">never, seldom, sometimes, frequently, often</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Counterproductive work behavior scale</b></td>
-<td class="org-left">I spoke with colleagues about the negative aspects of my work</td>
-<td class="org-left">never, seldom, sometimes, frequently, often</td>
-</tr>
-
-<tr>
-<td class="org-left"><b>Counterproductive work behavior scale</b></td>
-<td class="org-left">I spoke with people outside the organization about the negative aspects of my work</td>
-<td class="org-left">never, seldom, sometimes, frequently, often</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org492e534" class="outline-2">
-<h2 id="org492e534">KEYBOARD-SNARVEIER</h2>
-<div class="outline-text-2" id="text-org492e534">
+</details>
+<details> <summary> Intensivering av arbeidet </summary>
 <p>
-Under hver fane ligger en liste med de forskjellige skjemaene. Overskriftene i listene kan skjules og vises igjen ved å klikke på dem.
+<b>Veiledning</b>: I løpet av de siste 5 årene, har følgende endringer skjedd i arbeidet ditt? Hvis du har jobbet mindre enn 5 år med det du jobber med nå, vurder utsagnene basert på den tiden du har jobbet med det du jobber med nå.
 </p>
 
 <table>
-
+<caption class="t-above"><span class="table-number">Tabell 14</span> <b>The intensification of job demands scale (IDS)</b> (Kubicheck et al., 2014, <a href="https://www.tandfonline.com/doi/full/10.1080/1359432X.2014.979160">link</a>)</caption>
 
 <colgroup>
 <col  class="org-left">
-</colgroup>
 
-<colgroup>
+<col  class="org-left">
+
 <col  class="org-left">
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="org-left">Shortcut</th>
-<th scope="col" class="org-left">What it does</th>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="org-left">n</td>
-<td class="org-left">Move to the next main heading</td>
+<td class="org-left">Intensivering av arbeid</td>
+<td class="org-left">Det er sjeldnere og sjeldnere tilstrekkelig tid til arbeidsoppgaver</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
 </tr>
 
 <tr>
-<td class="org-left">p</td>
-<td class="org-left">Move to the previous main heading</td>
+<td class="org-left">Intensivering av arbeid</td>
+<td class="org-left">Det blir stadig vanskeligere å ta seg tid til pauser</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
 </tr>
 
 <tr>
-<td class="org-left">-</td>
-<td class="org-left">Collapse all</td>
+<td class="org-left">Intensivering av arbeid</td>
+<td class="org-left">Tiden mellom de mer intense jobbperiodene har blitt kortere</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
 </tr>
 
 <tr>
-<td class="org-left">+</td>
-<td class="org-left">Expand all</td>
+<td class="org-left">Intensivering av arbeid</td>
+<td class="org-left">Man må oftere gjøre to eller tre ting samtidig (for eksempel spise lunsj, skrive e-post og snakke i telefonen)</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
 </tr>
 
 <tr>
-<td class="org-left">r</td>
-<td class="org-left">Go to next task in list</td>
+<td class="org-left">Intensivering av arbeid</td>
+<td class="org-left">Stadig mer arbeid må gjøres av færre ansatte</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
 </tr>
 
 <tr>
-<td class="org-left">R</td>
-<td class="org-left">Go to previous task in list</td>
+<td class="org-left">Økte krav til planlegging og beslutninger i forbindelse med karriere</td>
+<td class="org-left">Man må i stadig større grad opprettholde sin attraktivitet på arbeidsmarkedet (f.eks. gjennom videreutdanning, nettverksbygging)</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
 </tr>
 
 <tr>
-<td class="org-left">q</td>
-<td class="org-left">Stop reviewing the list of tasks</td>
+<td class="org-left">Økte krav til planlegging og beslutninger i forbindelse med karriere</td>
+<td class="org-left">Egen faglig utvikling innebærer i økende grad å være åpen for andre alternativer</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
 </tr>
 
 <tr>
-<td class="org-left">g</td>
-<td class="org-left">Reload the page</td>
+<td class="org-left">Økte krav til planlegging og beslutninger i forbindelse med karriere</td>
+<td class="org-left">Man må i økende grad planlegge sin profesjonelle karriere på egen hånd</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Økte kompetansekrav</td>
+<td class="org-left">Man må i økende grad gjøre seg kjent med nye arbeidsprosesser</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Økte kompetansekrav</td>
+<td class="org-left">Man må i økende grad venne seg til nye arbeidsprosesser</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
+</tr>
+
+<tr>
+<td class="org-left">Økte kompetansekrav</td>
+<td class="org-left">Man må oftere bruke nytt arbeidsutstyr (enheter, programmer, osv.)</td>
+<td class="org-left">1 Ikke i det hele tatt, 2, 3, 4, 5 Fullstendig</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</details>
+<details> <summary> Videomøte-utmattelse og -tretthet </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 15</span> <b>Zoom Exhaustion &amp; Fatigue Scale</b> (Fauville et al., 2021, <a href="https://www.sciencedirect.com/science/article/pii/S2451958821000671">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Generell utmattelse</td>
+<td class="org-left">Hvor trøtt føler du deg etter videomøter?</td>
+<td class="org-left">1 Ikke i det hele tatt, 2 Litt, 3 Moderat, 4 Veldig, 5 Ekstremt</td>
+</tr>
+
+<tr>
+<td class="org-left">Generell utmattelse</td>
+<td class="org-left">Hvor utslitt føler du deg etter videomøter?</td>
+<td class="org-left">1 Ikke i det hele tatt, 2 Litt, 3 Moderat, 4 Veldig, 5 Ekstremt</td>
+</tr>
+
+<tr>
+<td class="org-left">Generell utmattelse</td>
+<td class="org-left">Hvor mentalt utmattet føler du deg etter videomøter?</td>
+<td class="org-left">1 Ikke i det hele tatt, 2 Litt, 3 Moderat, 4 Veldig, 5 Ekstremt</td>
+</tr>
+
+<tr>
+<td class="org-left">Sosial utmattelse</td>
+<td class="org-left">I hvor stor grad unngår du sosiale situasjoner etter videomøter?</td>
+<td class="org-left">1 Ikke i det hele tatt, 2 Litt, 3 Moderat, 4 Veldig, 5 Ekstremt</td>
+</tr>
+
+<tr>
+<td class="org-left">Sosial utmattelse</td>
+<td class="org-left">Hvor mye ønsker du å være alene etter videomøter?</td>
+<td class="org-left">1 Ikke i det hele tatt, 2 Litt, 3 Moderat, 4 Veldig, 5 Ekstremt</td>
+</tr>
+
+<tr>
+<td class="org-left">Sosial utmattelse</td>
+<td class="org-left">Hvor stort er ditt behov for alenetid etter videomøter?</td>
+<td class="org-left">1 Ikke i det hele tatt, 2 Litt, 3 Moderat, 4 Veldig, 5 Ekstremt</td>
+</tr>
+
+<tr>
+<td class="org-left">Emosjonell utmattelse</td>
+<td class="org-left">Hvor følelsesmessig utmattet er du etter videomøter?</td>
+<td class="org-left">1 Ikke i det hele tatt, 2 Litt, 3 Moderat, 4 Veldig, 5 Ekstremt</td>
+</tr>
+
+<tr>
+<td class="org-left">Emosjonell utmattelse</td>
+<td class="org-left">Hvor irritabel føler du deg etter videomøter?</td>
+<td class="org-left">1 Ikke i det hele tatt, 2 Litt, 3 Moderat, 4 Veldig, 5 Ekstremt</td>
+</tr>
+
+<tr>
+<td class="org-left">Emosjonell utmattelse</td>
+<td class="org-left">Hvor humørsyk føler du deg etter videomøter?</td>
+<td class="org-left">1 Ikke i det hele tatt, 2 Litt, 3 Moderat, 4 Veldig, 5 Ekstremt</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details> <summary> Arbeidsrelatert frykt for å gå glipp av ting (Fear of Missing Out; FoMO) </summary>
+
+<p>
+<b>Veiledning:</b> Vennligst oppgi hvor enig du er i hver uttalelse med tanke på hvordan du vanligvis eller stort sett føler deg når du er borte fra jobb (f.eks. har fri) eller frakoblet jobb (f.eks. ikke tilgjengelig via e-post, SMS eller andre direktemeldinger).
+</p>
+
+<table>
+<caption class="t-above"><span class="table-number">Tabell 16</span> <b>Workplace FoMO</b> (Budnick et al., 2020, <a href="https://www.sciencedirect.com/science/article/pii/S0747563219303735">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Arbeidsrelatert FoMO</td>
+<td class="org-left">Jeg er redd for å gå glipp av nettverksmuligheter som kollegene mine får.</td>
+<td class="org-left">1 Svært uenig, 2 Uenig, 3 Verken enig eller uenig, 4 Enig, 5 Helt enig</td>
+</tr>
+
+<tr>
+<td class="org-left">Arbeidsrelatert FoMO</td>
+<td class="org-left">Jeg blir engstelig for at jeg skal gå glipp av muligheter til å skape viktige forbindelser på jobb.</td>
+<td class="org-left">1 Svært uenig, 2 Uenig, 3 Verken enig eller uenig, 4 Enig, 5 Helt enig</td>
+</tr>
+
+<tr>
+<td class="org-left">Arbeidsrelatert FoMO</td>
+<td class="org-left">Jeg bekymrer meg for å gå glipp av verdifull jobbrelatert informasjon.</td>
+<td class="org-left">1 Svært uenig, 2 Uenig, 3 Verken enig eller uenig, 4 Enig, 5 Helt enig</td>
+</tr>
+
+<tr>
+<td class="org-left">Arbeidsrelatert FoMO</td>
+<td class="org-left">Jeg bekymrer meg for å gå glipp av viktig informasjon som er relevant for jobben min.</td>
+<td class="org-left">1 Svært uenig, 2 Uenig, 3 Verken enig eller uenig, 4 Enig, 5 Helt enig</td>
+</tr>
+
+<tr>
+<td class="org-left">Arbeidsrelatert FoMO</td>
+<td class="org-left">Jeg bekymrer meg for å ikke få vite hva som skjer på jobben.</td>
+<td class="org-left">1 Svært uenig, 2 Uenig, 3 Verken enig eller uenig, 4 Enig, 5 Helt enig</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details> <summary> Nettbasert uhøflighet og trakassering </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 17</span> <b>Inventory of Cyberbullying Acts at Work (ICA-W)</b> (Vranjes et al., 2017, <a href="https://www.tandfonline.com/doi/abs/10.1080/1359432X.2017.1363185?needAccess=true">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Arbeidsrelatert</td>
+<td class="org-left">E-postene, telefonsamtalene eller meldingene dine blir ignorert på jobben.</td>
+<td class="org-left">1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig</td>
+</tr>
+
+<tr>
+<td class="org-left">Arbeidsrelatert</td>
+<td class="org-left">E-postene dine videresendes til tredjeparter for å skade deg.</td>
+<td class="org-left">1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig</td>
+</tr>
+
+<tr>
+<td class="org-left">Arbeidsrelatert</td>
+<td class="org-left">Arbeidet ditt kritiseres åpent ved hjelp av IKT</td>
+<td class="org-left">1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig</td>
+</tr>
+
+<tr>
+<td class="org-left">Arbeidsrelatert</td>
+<td class="org-left">Noen holder tilbake e-poster eller filer du trenger</td>
+<td class="org-left">1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig</td>
+</tr>
+
+<tr>
+<td class="org-left">Personrelatert</td>
+<td class="org-left">Rykter eller sladder spres om deg ved hjelp av IKT.</td>
+<td class="org-left">1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig</td>
+</tr>
+
+<tr>
+<td class="org-left">Personrelatert</td>
+<td class="org-left">Du blir fornærmet, truet eller skremt ved hjelp av IKT</td>
+<td class="org-left">1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig</td>
+</tr>
+
+<tr>
+<td class="org-left">Personrelatert</td>
+<td class="org-left">Du mottar stadig kommentarer om deg og ditt privatliv gjennom IKT.</td>
+<td class="org-left">1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig</td>
+</tr>
+
+<tr>
+<td class="org-left">Krenking av privatliv</td>
+<td class="org-left">Din personlige informasjon er hacket og brukt til å skade deg.</td>
+<td class="org-left">1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig</td>
+</tr>
+
+<tr>
+<td class="org-left">Krenking av privatliv</td>
+<td class="org-left">Noen stjeler identiteten din.</td>
+<td class="org-left">1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig</td>
+</tr>
+
+<tr>
+<td class="org-left">Krenking av privatliv</td>
+<td class="org-left">Personopplysninger om deg deles på nettet eller distribueres via meldinger til andre.</td>
+<td class="org-left">1 Aldri, 2 En gang, 3 Månedlig, 4 Ukentlig, 5 Daglig</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+
+<details> <summary> JOBBUSIKKERHET </summary>
+
+<details> <summary> Cognitive/affective job insecurity </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 18</span> <b>Cognitive/affective job insecurity</b> (Pienaar et al., 2013, <a href="file:///c:/C:/Users/joc/Downloads/110912-Article%20Text-306075-1-10-20141217.pdf">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Cognitive job insecurity</b></td>
+<td class="org-left">I think that I will be able to continue working here</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Cognitive job insecurity</b></td>
+<td class="org-left">There is only a small chance that I will become unemployed</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Cognitive job insecurity</b></td>
+<td class="org-left">I am certain/sure of my job environment</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Cognitive job insecurity</b></td>
+<td class="org-left">I am very sure that I will be able to keep my job</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Affective job insecurity</b></td>
+<td class="org-left">I feel uncertain about the future of my job</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Affective job insecurity</b></td>
+<td class="org-left">I worry about the continuation of my career</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Affective job insecurity</b></td>
+<td class="org-left">I fear that I might lose my job</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Affective job insecurity</b></td>
+<td class="org-left">I fear that I might get fired</td>
+<td class="org-left">1 (Disagree strongly) to 5 (Agree strongly)</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<details> <summary> Qualitative job insecurity measure (QJIM) </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 19</span> <b>Qualitative job insecurity measure (QJIM)</b> (Blotenberg &amp; Richter, 2020, <a href="https://www.tandfonline.com/doi/full/10.1080/02678373.2020.1719553">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Qualitative Job insecurity</b></td>
+<td class="org-left">"I think my work will change for the worse."</td>
+<td class="org-left">1 (totally disagree) to 5 (totally agree)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Qualitative Job insecurity</b></td>
+<td class="org-left">"I have concerns about my career in the organization."</td>
+<td class="org-left">1 (totally disagree) to 5 (totally agree)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Qualitative Job insecurity</b></td>
+<td class="org-left">"I worry about getting less stimulating and varied tasks in the future."</td>
+<td class="org-left">1 (totally disagree) to 5 (totally agree)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Qualitative Job insecurity</b></td>
+<td class="org-left">"I worry that I will not be able to influence how I can plan my work."</td>
+<td class="org-left">1 (totally disagree) to 5 (totally agree)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Qualitative Job insecurity</b></td>
+<td class="org-left">"I feel anxiety about not being able to perform my duties in the way that I had earlier."</td>
+<td class="org-left">1 (totally disagree) to 5 (totally agree)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Qualitative Job insecurity</b></td>
+<td class="org-left">"There is a risk that I will not have access to the same resources (work colleagues, materials and information)."</td>
+<td class="org-left">1 (totally disagree) to 5 (totally agree)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Qualitative Job insecurity</b></td>
+<td class="org-left">"I worry that my work will not be as meaningful in the future"</td>
+<td class="org-left">1 (totally disagree) to 5 (totally agree)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Qualitative Job insecurity</b></td>
+<td class="org-left">"I worry that the quality of my work will deteriorate."</td>
+<td class="org-left">1 (totally disagree) to 5 (totally agree)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Qualitative Job insecurity</b></td>
+<td class="org-left">"I worry that my skills and knowledge will not benefit my work."</td>
+<td class="org-left">1 (totally disagree) to 5 (totally agree)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Qualitative Job insecurity</b></td>
+<td class="org-left">"I feel anxiety about not being able to handle the demands that will be placed on me."</td>
+<td class="org-left">1 (totally disagree) to 5 (totally agree)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Qualitative Job insecurity</b></td>
+<td class="org-left">"I worry that the values of the organization will change for the worse."</td>
+<td class="org-left">1 (totally disagree) to 5 (totally agree)</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<details> <summary> The Multidimensional Qualitative Job Insecurity Scale (MQJIS) </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 20</span> <b>The Multidimensional Qualitative Job Insecurity Scale (MQJIS)</b> (Brondino et al., 2020, <a href="https://link.springer.com/content/pdf/10.1007/s11135-020-00966-y.pdf">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Social relationships</b></td>
+<td class="org-left">I worry I might get another supervisor in the future</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Social relationships</b></td>
+<td class="org-left">I am not sure which colleagues I will be soon cooperating with</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Employment conditions</b></td>
+<td class="org-left">I am insecure about my chances of promotion</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Employment conditions</b></td>
+<td class="org-left">I worry about the growth of my salary</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Working conditions</b></td>
+<td class="org-left">I am afraid I might soon have to work in a different location or in a diferent department</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Working conditions</b></td>
+<td class="org-left">Chances are my workload will increase in the future</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Work content</b></td>
+<td class="org-left">I feel insecure about the future content of my job</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Work content</b></td>
+<td class="org-left">I think my work will become less interesting in the future</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+</details>
+<details> <summary> ISOLASJON </summary>
+<details> <summary> Loneliness at work scale (LAWS) </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 21</span> <b>Loneliness at work scale (LAWS)</b> (Wright et al., 2006, <a href="https://www.researchgate.net/publication/29487439_Loneliness_in_the_Workplace_Construct_definition_and_scale_development">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Emotional Deprivation</b></td>
+<td class="org-left">I often feel abandoned by my co-workers when I am under pressure at work</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Emotional Deprivation</b></td>
+<td class="org-left">I often feel alienated from my co-workers</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Emotional Deprivation</b></td>
+<td class="org-left">I feel myself withdrawing from the people I work with</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Emotional Deprivation</b></td>
+<td class="org-left">I often feel emotionally distant from the people I work with</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Emotional Deprivation</b></td>
+<td class="org-left">I feel satisfied with the relationships I have at work(reversed)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Emotional Deprivation</b></td>
+<td class="org-left">There is a sense of camaraderie in my workplace(reversed)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Emotional Deprivation</b></td>
+<td class="org-left">I often feel isolated when I am with my co-workers</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Emotional Deprivation</b></td>
+<td class="org-left">I often feel disconnected from others at work</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Emotional Deprivation</b></td>
+<td class="org-left">I experience a general sense of emptiness when I am at work</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Social Companionship</b></td>
+<td class="org-left">I have social companionship/fellowship at work(reversed)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Social Companionship</b></td>
+<td class="org-left">I feel included in the social aspects of work(reversed)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Social Companionship</b></td>
+<td class="org-left">There is someone at work I can talk to about my day to day work problems if I need to•</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Social Companionship</b></td>
+<td class="org-left">There is no one at work I can share personal houghts with if I want to</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Social Companionship</b></td>
+<td class="org-left">I have someone at work I can spend time with on my breaks if I want to(reversed)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Social Companionship</b></td>
+<td class="org-left">I feel part of a group of friends at work(reversed)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Social Companionship</b></td>
+<td class="org-left">There are people at work who take the trouble to listen to me(reversed)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<details> <summary> Professional isolation </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 22</span> <b>Professional isolation</b> (Golden et al., 2008, <a href="https://doi.apa.org/fulltext/2008-16251-016.html">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Professional isolation</b></td>
+<td class="org-left">“I feel left out on activities and meetings that could enhance my career”</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Professional isolation</b></td>
+<td class="org-left">“I miss out on opportunities to be mentored”</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Professional isolation</b></td>
+<td class="org-left">“I feel out of the loop”</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Professional isolation</b></td>
+<td class="org-left">“I miss face-to-face contact with coworkers”</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Professional isolation</b></td>
+<td class="org-left">“I feel isolated”</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Professional isolation</b></td>
+<td class="org-left">“I miss the emotional support of coworkers”</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Professional isolation</b></td>
+<td class="org-left">“I miss informal interaction with others”</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+</details>
+<details> <summary> MANGFOLD </summary>
+<details> <summary> Workplace age friendliness scale </summary>
+<p>
+<b>Instructions:</b> The participants were asked to indicate on a seven-point Likert scale ranging from “strongly agree” to “absolutely disagree” the extent to which each of the statements is consistent with their organization’s values and conduct in addressing older workers. The participants were told that for the purpose of the study, an older worker is an employee aged 55 and older (in line with McCarthy et al., 2014).
+</p>
+
+<table>
+<caption class="t-above"><span class="table-number">Tabell 23</span> <b>Workplace age friendliness scale</b> (Hattab et al., 2020, <a href="https://academic.oup.com/innovateage/article/4/4/igaa024/5866069">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Age-Friendly Core Culture</b></td>
+<td class="org-left">My organization treats older workers fairly and equally.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Age-Friendly Core Culture</b></td>
+<td class="org-left">In my organization there is no age discrimination in processes such as recruitment, promotion, and dismissal.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Age-Friendly Core Culture</b></td>
+<td class="org-left">Managers in my organization are a personal example of the wish to recruit and retain workers of all ages, including older workers.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Age-Friendly Core Culture</b></td>
+<td class="org-left">In my organization, there is a positive atmosphere towards the employment of older workers.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Age-Friendly Core Culture</b></td>
+<td class="org-left">My organization promotes multi-age diversity in the organizational workforce.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Age-Friendly Core Culture</b></td>
+<td class="org-left">My organization makes sure that older workers are recognized and respected no less than other workers.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Age-Friendly Core Culture</b></td>
+<td class="org-left">My organization shows responsibility for older workers who have long contributed to the organization.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Age-Friendly Core Culture</b></td>
+<td class="org-left">Older workers in my organization are not the first priority for dismissal during organizational change or downsizing.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Age-Friendly Core Culture</b></td>
+<td class="org-left">Older workers in my organization are not pressured to vacate their place and retire early.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Development</b></td>
+<td class="org-left">My organization allows older workers to update and upgrade their knowledge and skills as part of their job.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Development</b></td>
+<td class="org-left">In my organization, older workers are encouraged to acquire more new skills appropriate for changes in their professional field.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Development</b></td>
+<td class="org-left">In my organization older workers are encouraged to serve as mentors for other employees.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Development</b></td>
+<td class="org-left">My organization allows older workers to continue to develop throughout their working lives.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Development</b></td>
+<td class="org-left">In my organization, older workers are encouraged to initiate changes in their jobs, in line with the needs of the organization.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Development</b></td>
+<td class="org-left">My organization knows how to benefit from the total knowledge, skills and abilities of older workers.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Wellness</b></td>
+<td class="org-left">My organization takes care and acts to promote the health and well-being of older workers.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Wellness</b></td>
+<td class="org-left">My organization encourages older workers to participate in health promotion activities.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Wellness</b></td>
+<td class="org-left">My organization works to raise awareness and change attitudes towards continuing work at older ages.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Wellness</b></td>
+<td class="org-left">In my organization, older workers are offered job changes, if necessary, to better fit their abilities.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Wellness</b></td>
+<td class="org-left">My organization organizes the work so that older workers remain in the organization in optimal functioning.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Wellness</b></td>
+<td class="org-left">When required, my organization helps to reduce or adapt physical or psychological efforts to the abilities and needs of older workers.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Flexibility</b></td>
+<td class="org-left">In my workplace, older workers are given flexibility in choosing the range of hours worked.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Flexibility</b></td>
+<td class="org-left">In my workplace, older workers are given flexibility in choosing the scope of the position.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Flexibility</b></td>
+<td class="org-left">In my workplace, older workers are given flexibility in choosing the job location.</td>
+<td class="org-left">1 = “strongly agree” to 7 = “absolutely disagree”</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+</details>
+<details> <summary> MENING OG HENSIKT </summary>
+<details> <summary> The job crafting questionnaire </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 24</span> <b>The job crafting questionnaire</b> (Slemp &amp; Vella-Broderick, <a href="https://www.researchgate.net/publication/312192742_The_job_crafting_questionnaire_A_new_scale_to_measure_the_extent_to_which_employees_engage_in_job_crafting">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Task crafting</b></td>
+<td class="org-left">1 Introduce new approaches to improve your work</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Task crafting</b></td>
+<td class="org-left">2 Change the scope or types of tasks that you complete at work</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Task crafting</b></td>
+<td class="org-left">3 Introduce new work tasks that better suit your skills or interests</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Task crafting</b></td>
+<td class="org-left">4 Choose to take on additional tasks at work</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Task crafting</b></td>
+<td class="org-left">5 Give preference to work tasks that suit your skills or interests</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Task crafting</b></td>
+<td class="org-left">6 Change the way you do your job to make it more enjoyable for yourself</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Task crafting</b></td>
+<td class="org-left">7 Change minor procedures that you think are not productive</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Cognitive crafting</b></td>
+<td class="org-left">8 Think about how your job gives your life purpose</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Cognitive crafting</b></td>
+<td class="org-left">9 Remind yourself about the significance your work has for the success of the organisation</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Cognitive crafting</b></td>
+<td class="org-left">10 Remind yourself of the importance of your work for the broader community</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Cognitive crafting</b></td>
+<td class="org-left">11 Think about the ways in which your work positively impacts your life</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Cognitive crafting</b></td>
+<td class="org-left">12 Reflect on the role your job has for your overall well-being</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Relational crafting</b></td>
+<td class="org-left">13 Engage in networking activities to establish more relationships</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Relational crafting</b></td>
+<td class="org-left">14 Make an effort to get to know people well at work</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Relational crafting</b></td>
+<td class="org-left">15 Organise or attend work related social functions</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Relational crafting</b></td>
+<td class="org-left">16 Organise special events in the workplace (e.g., celebrating a co-worker's birthday)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Relational crafting</b></td>
+<td class="org-left">17 Introduce yourself to co-workers, customers, or clients you have not met</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Relational crafting</b></td>
+<td class="org-left">18 Choose to mentor new employees (officially or unofficially)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Relational crafting</b></td>
+<td class="org-left">19 Make friends with people at work who have similar skills or interests</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<details> <summary> ME-Work </summary>
+<p>
+<b>Instruction:</b> Please read the following statements carefully and indicate to what extent you agree with them.
+</p>
+
+<table>
+<caption class="t-above"><span class="table-number">Tabell 25</span> <b>ME-Work</b> (Schnell &amp; Hoffmann, 2020, <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2020.599913/full">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Konsept</th>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Coherence</b></td>
+<td class="org-left">1.	My work reflects my interests.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Coherence</b></td>
+<td class="org-left">2.	The position I hold in my job fits well with my personal characteristics.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Coherence</b></td>
+<td class="org-left">3.	My professional activities fit well with what I have set out to do in life.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Significance</b></td>
+<td class="org-left">1.	My work makes the world a little bit better.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Significance</b></td>
+<td class="org-left">2.	Through my professional activity I make a valuable contribution to society.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Significance</b></td>
+<td class="org-left">3.	My work enriches the lives of others.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Purpose</b></td>
+<td class="org-left">1.	In my workplace, profit comes before humanity. (-)</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Purpose</b></td>
+<td class="org-left">2.	My employer is involved in solving social problems.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Purpose</b></td>
+<td class="org-left">3.	It is more important to my employer that tasks are carried out carefully than in the shortest possible time.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Purpose</b></td>
+<td class="org-left">4.	My employer cares about the welfare of society.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Belonging</b></td>
+<td class="org-left">1.	I am well integrated into the collegial community.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Belonging</b></td>
+<td class="org-left">2.	I feel comfortable in the company of my colleagues.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Belonging</b></td>
+<td class="org-left">3.	We are a great team at work.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Meaningful work</b></td>
+<td class="org-left">1.	The work I am doing on my job makes sense to me.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Meaningful work</b></td>
+<td class="org-left">2.	I see meaning in my work.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Meaningful work</b></td>
+<td class="org-left">3.	I find my profession meaningful.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Meaningless work</b></td>
+<td class="org-left">1.	I'm in a career crisis.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Meaningless work</b></td>
+<td class="org-left">2.	When I think about the meaning of my work, I feel nothing but emptiness.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Meaningless work</b></td>
+<td class="org-left">3.	I feel pain from finding no meaning in my work.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Work as a source of meaning</b></td>
+<td class="org-left">1.	I can achieve self-realisation in my work.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Work as a source of meaning</b></td>
+<td class="org-left">2.	My work fulfils me.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Work as a source of meaning</b></td>
+<td class="org-left">3.	I can grow through my work.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Work as a source of meaning</b></td>
+<td class="org-left">4.	My professional activity gives meaning to my life.</td>
+<td class="org-left">0 (don’t agree at all) to 5 (agree completely)</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<details> <summary> Work and meaning inventory </summary>
+<table>
+<caption class="t-above"><span class="table-number">Tabell 26</span> <b>The work and meaning inventory (WAMI)</b> (Steger, 2011, <a href="http://www.michaelfsteger.com/wp-content/uploads/2012/08/WAMI.pdf">link</a>)</caption>
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Testledd</th>
+<th scope="col" class="org-left">Svaralternativer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1. I have found a meaningful career</td>
+<td class="org-left">Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true</td>
+</tr>
+
+<tr>
+<td class="org-left">2. I view my work as contributing to my personal growth.</td>
+<td class="org-left">Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true</td>
+</tr>
+
+<tr>
+<td class="org-left">3. My work really makes no difference to the world.</td>
+<td class="org-left">Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true</td>
+</tr>
+
+<tr>
+<td class="org-left">4. I understand how my work contributes to my life’s meaning.</td>
+<td class="org-left">Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true</td>
+</tr>
+
+<tr>
+<td class="org-left">5. I have a good sense of what makes my job meaningful.</td>
+<td class="org-left">Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true</td>
+</tr>
+
+<tr>
+<td class="org-left">6. I know my work makes a positive difference in the world.</td>
+<td class="org-left">Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true</td>
+</tr>
+
+<tr>
+<td class="org-left">7. My work helps me better understand myself.</td>
+<td class="org-left">Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true</td>
+</tr>
+
+<tr>
+<td class="org-left">8. I have discovered work that has a satisfying purpose.</td>
+<td class="org-left">Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true</td>
+</tr>
+
+<tr>
+<td class="org-left">9. My work helps me make sense of the world around me.</td>
+<td class="org-left">Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true</td>
+</tr>
+
+<tr>
+<td class="org-left">10. The work I do serves a greater purpose.</td>
+<td class="org-left">Absolutely untrue, mostly untrue, Neither true nor untrue, Mostly true, Absolutely true</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+</details>
+</details>
 </div>
 </body>
 </html>
