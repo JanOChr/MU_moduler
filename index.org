@@ -1,0 +1,281 @@
+* PREAMBLE                                                                                :noexport:
+** ORG
+#+TITLE: Instrumenter
+#+DATE:
+#+AUTHOR: Jan Olav Christensen
+#+OPTIONS: html-postamble:nil html-style:nil toc:nil num:nil
+#+STARTUP: overview
+#+LANGUAGE: en
+** LATEX
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+#+LATEX_HEADER: \usepackage[margin=1cm]{geometry}
+** HTML SETUP
+#+HTML_HEAD: <script> var HS_STARTUP_FOLDED = true; </script>
+
+#+HTML_HEAD: <script>
+#+HTML_HEAD: function openAll() {
+#+HTML_HEAD:   var elems = document.getElementsByTagName("details");
+#+HTML_HEAD:   document.getElementById("btnExpandHideAllDetails").innerHTML = "Lukk alt";
+#+HTML_HEAD:   document.getElementById("btnExpandHideAllDetails").setAttribute( "onClick", "javascript: closeAll();");
+#+HTML_HEAD: 
+#+HTML_HEAD:   for (var i = 0; i <= elems.length; i++){
+#+HTML_HEAD:     elems[i].setAttribute("open", "true");
+#+HTML_HEAD:     }
+#+HTML_HEAD: }
+#+HTML_HEAD: 
+#+HTML_HEAD: function closeAll() {	
+#+HTML_HEAD:   var elems = document.getElementsByTagName("details");
+#+HTML_HEAD:   document.getElementById("btnExpandHideAllDetails").setAttribute( "onClick", "javascript: openAll();" );
+#+HTML_HEAD:   document.getElementById("btnExpandHideAllDetails").innerHTML = "Se alt";	
+#+HTML_HEAD:   
+#+HTML_HEAD:   for (var i = 0; i <= elems.length; i++){
+#+HTML_HEAD:     elems[i].removeAttribute("open");
+#+HTML_HEAD:   }
+#+HTML_HEAD: }
+#+HTML_HEAD: </script>
+
+#+HTML_HEAD: <link rel="stylesheet" href="STYLE.css">
+
+** PUBLISHING FUNCTION
+#+begin_src emacs-lisp :value results :results silent :eval no-export
+(setq org-publish-project-alist
+      '(("NAM"
+         :base-directory "NAM_4/"
+         ;;:base-directory "/NAM_4/"
+         :publishing-directory "G:\\Min disk\\UNDER__BEARBEIDING\\NAM/EXPORT/"
+         ;;:publishing-directory "/Volumes/GoogleDrive/My Drive/UNDER__BEARBEIDING/NAM/EXPORT/"
+         :section-numbers nil
+         :with-toc nil
+	 :recursive t
+	 ;; HTML5
+	 :html-doctype "html5"
+	 :html-html5-fancy t
+	 ;; Disable some Org's HTML defaults
+	 :html-head-include-scripts nil
+	 :html-head-include-default-style nil
+	 :publishing-function org-html-publish-to-html)
+	("Attachments"
+	 :base-directory "g:/Min disk/UNDER__BEARBEIDING/NAM/NAM_3/"
+	 ;;:base-directory "/Volumes/GoogleDrive/My Drive/UNDER__BEARBEIDING/NAM/NAM_3/"
+	 :base-extension "css\\|txt\\|jpg\\|gif\\|png\\|pdf\\|org\\|yml\\|png\\|setup\\|js\\|swf"
+	 :recursive t
+	 :publishing-directory "G:\\Min disk\\UNDER__BEARBEIDING\\NAM/EXPORT/"
+	 ;;:publishing-directory "/Volumes/GoogleDrive/My Drive/UNDER__BEARBEIDING/NAM/EXPORT/"
+	 :publishing-function org-publish-attachment)	
+	("ALL" :components ("NAM" "Attachments"))
+	)
+      )
+#+end_src
+
+** AUTORELOAD
+# In the folder where your html file will be, install simple autoreload server
+# npm install -g simple-autoreload-server
+
+# and then start it:
+#+begin_src eshell :async :eval no-export
+autoreload-server
+#+end_src
+
+#+RESULTS:
+: 9fd5cacb657eacb97a64799de86eb13c
+
+* SE ALT-knappen                                                                          :ignore:
+#+HTML: <button id="btnExpandHideAllDetails" onclick="openAll()" style="color:white;background-color:#87B3E6;">Se alt</button>
+
+* POTENSIELLE VIRKNINGER AV ARBEIDSFORHOLD                                                :ignore:
+#+HTML: <details> <summary> POTENSIELLE VIRKNINGER AV ARBEIDSFORHOLD </summary>
+** Organizational commitment                                                               :ignore:
+#+HTML: <details> <summary> Organisasjonstilhørighet </summary>
+#+INCLUDE: ../Instrumenter/Organizational_commitment_scale.org
+#+HTML: </details>
+** Utrecht Work Engagement Scale (UWES)                                                    :ignore:
+#+HTML: <details> <summary> Jobbengasjement </summary>
+#+INCLUDE: ../Instrumenter/Work_engagement_scale.org
+#+HTML: </details>
+** Cognitive stress, COPSOQ III                                                            :ignore:
+#+HTML: <details> <summary> Kognitivt stress </summary>
+#+INCLUDE: ../Instrumenter/Cognitive_stress_scale.org
+#+HTML: </details>
+** The Brief Irritability Test (BITe)                                                      :ignore:
+#+HTML: <details> <summary> Irritabilitet </summary>
+#+INCLUDE: ../Instrumenter/Brief_irritability_test.org
+#+HTML: </details>
+** Work-related rumination questionnaire (WRRQ)                                            :ignore:
+#+HTML: <details> <summary> Arbeidsrelatert grubling (ruminering) (WRRQ) </summary>
+#+INCLUDE: ../Instrumenter/Work_related_rumination_scale.org
+#+HTML: </details>
+** Jenkins Sleep Scale                                                                     :ignore:
+#+HTML: <details> <summary> Søvn </summary>
+#+INCLUDE: ../Instrumenter/Sleep_scale.org
+#+HTML: </details>
+** Health behaviors                                                                        :ignore:
+#+HTML: <details> <summary> Helserelatert atferd </summary>
+#+INCLUDE: ../Instrumenter/Positive_health_behaviors_scale.org
+#+HTML: </details>
+** Thriving at work                                                                        :ignore:
+#+HTML: <details> <summary> Selvopplevd utvikling og vekst i jobben </summary>
+#+INCLUDE: ../Instrumenter/Thriving_at_work_scale.org
+#+HTML: </details>
+** Self-assessed work performance                                                          :ignore:
+#+HTML: <details> <summary> Selvvurdert prestasjon </summary>
+#+INCLUDE: ../Instrumenter/Work_performance_scale.org
+#+HTML: </details>
+** Flourishing                                                                             :ignore:
+#+HTML: <details> <summary> Blomstring </summary>
+#+INCLUDE: ../Instrumenter/Flourishing_scale.org
+#+HTML: </details>
+
+** The recovery experience questionnaire                                                   :ignore:
+#+HTML: <details> <summary> Detachment/recovery </summary>
+#+INCLUDE: ../Instrumenter/The_recovery_experience_scale.org
+#+HTML: </details>
+
+* END DETAILS                                                                             :ignore:
+#+HTML: </details>
+* NYE ARBEIDSMÅTER                                                                        :ignore:
+#+HTML: <details> <summary> NYE ARBEIDSMÅTER </summary>
+** Digital stressors scale (DSS)                                                           :ignore:
+#+HTML: <details> <summary> Skala for digitale stressorer </summary>
+#+INCLUDE: ../Instrumenter/Digital_stressors_scale.org
+#+HTML: </details>
+** Artificial intelligence anxiety (AIA) scale                                            :ignore:
+#+HTML: <details> <summary> Artificial intelligence anxiety (AIA) scale </summary>
+#+INCLUDE: ../Instrumenter/AIA.org
+#+HTML: </details>
+
+** Extended work availability                                                              :ignore:
+#+HTML: <details> <summary> Utvidet jobbtilgjengelighet </summary>
+#+INCLUDE: ../Instrumenter/Extended_work_availability_scale.org
+#+HTML: </details>
+** Workplace telepressure                                                                  :ignore:
+#+HTML: <details> <summary> Workplace telepressure </summary>
+#+INCLUDE: ../Instrumenter/Workplace_telepressure_scale.org
+#+HTML: </details>
+** Work-Life Boundary Enactment Scale                                                      :ignore:
+#+HTML: <details> <summary> Skille mellom jobb og privatliv </summary>
+#+INCLUDE: ../Instrumenter/Work_life_boundary_enactment_scale.org
+#+HTML: </details>
+** Interruptions; Short Questionnaire for Job Analysis, Organizational Constraints scale   :ignore:
+#+HTML: <details> <summary> Avbrytelser og forstyrrelser i arbeidet </summary>
+#+INCLUDE: ../Instrumenter/Interruptions_scale.org
+#+HTML: </details>
+** The intensification of job demands scale                                                :ignore:
+#+HTML: <details> <summary> Intensivering av arbeidet </summary>
+#+INCLUDE: ../Instrumenter/The_intensification_of_job_demands_scale.org
+#+HTML: </details>
+** Zoom Exhaustion & Fatigue Scale                                                         :ignore:
+#+HTML: <details> <summary> Videomøte-utmattelse og -tretthet </summary>
+#+INCLUDE: ../Instrumenter/Zoom_exhaustion_scale.org
+#+HTML: </details>
+** Workplace FoMO                                                                          :ignore:
+#+HTML: <details> <summary> Arbeidsrelatert frykt for å gå glipp av ting (Fear of Missing Out; FoMO) </summary>
+#+INCLUDE: ../Instrumenter/Workplace_FOMO_scale.org
+#+HTML: </details>
+** Cyber-incivility                                                                        :ignore:
+#+HTML: <details> <summary> Nettbasert uhøflighet og trakassering </summary>
+#+INCLUDE: ../Instrumenter/Cyber_bullying_acts_at_work_scale.org
+#+HTML: </details>
+* END DETAILS                                                                             :ignore:
+#+HTML: </details>
+
+* JOBBUSIKKERHET                                                                          :ignore:
+#+HTML: <details> <summary> JOBBUSIKKERHET </summary>
+
+** Cognitive/affective job insecurity                                                      :ignore:
+#+HTML: <details> <summary> Cognitive/affective job insecurity </summary>
+#+INCLUDE: ../Instrumenter/Cognitive_affective_job_insecurity_scale.org
+#+HTML: </details>
+
+** Qualitative job insecurity measure (QJIM)                                               :ignore:
+#+HTML: <details> <summary> Qualitative job insecurity measure (QJIM) </summary>
+#+INCLUDE: ../Instrumenter/Qualitative_job_insecurity_measure.org
+#+HTML: </details>
+
+** The Multidimensional Qualitative Job Insecurity Scale (MQJIS)                           :ignore:
+#+HTML: <details> <summary> The Multidimensional Qualitative Job Insecurity Scale (MQJIS) </summary>
+#+INCLUDE: ../Instrumenter/Multidimensional_qualitative_job_insecurity_scale.org
+#+HTML: </details>
+
+* END DETAILS                                                                             :ignore:
+#+HTML: </details>
+* ISOLASJON                                                                               :ignore:
+#+HTML: <details> <summary> ISOLASJON </summary>
+** Loneliness at work scale (LAWS)                                                         :ignore:
+#+HTML: <details> <summary> Loneliness at work scale (LAWS) </summary>
+#+INCLUDE: ../Instrumenter/Loneliness_at_work_scale.org
+#+HTML: </details>
+
+** Professional isolation                                                                  :ignore:
+#+HTML: <details> <summary> Professional isolation </summary>
+#+INCLUDE: ../Instrumenter/Professional_isolation_scale.org
+#+HTML: </details>
+
+* END DETAILS                                                                             :ignore:
+#+HTML: </details>
+* MANGFOLD                                                                                :ignore:
+#+HTML: <details> <summary> MANGFOLD </summary>
+** Workplace age friendliness scale                                                        :ignore:
+#+HTML: <details> <summary> Workplace age friendliness scale </summary>
+#+INCLUDE: ../Instrumenter/Workplace_age_friendliness_scale.org
+#+HTML: </details>
+
+* END DETAILS                                                                             :ignore:
+#+HTML: </details>
+* MENING OG HENSIKT                                                                       :ignore:
+#+HTML: <details> <summary> MENING OG HENSIKT </summary>
+** The job crafting questionnaire                                                          :ignore:
+#+HTML: <details> <summary> The job crafting questionnaire </summary>
+#+INCLUDE: ../Instrumenter/Job_crafting_scale.org
+#+HTML: </details>
+
+** ME-Work                                                                                 :ignore:
+#+HTML: <details> <summary> ME-Work </summary>
+#+INCLUDE: ../Instrumenter/Meaningful_work_scale.org
+#+HTML: </details>
+
+** Work and meaning inventory                                                              :ignore:
+#+HTML: <details> <summary> Work and meaning inventory </summary>
+#+INCLUDE: ../Instrumenter/Work_and_meaning_inventory.org
+#+HTML: </details>
+
+* END DETAILS                                                                             :ignore:
+#+HTML: </details>
+* MODERATORER                                                                             :ignore:
+#+HTML: <details> <summary> MODERATORER </summary>
+** Familiesituasjon
+** Arbeidsnarkomani
+** Task interdependence
+** Communication skills
+** Trust
+** Supportive work-home culture
+** Involvement of Employee Representatives
+* END DETAILS                                                                             :ignore:
+#+HTML: </details>
+* B-liste (har ikke skjema)                                                               :ignore:
+#+HTML: <details> <summary> B-liste (skjema ikke innhentet enda, ettersom de ble ansett som mindre aktuelle) </summary>
+*** Organizational expectations for email monitoring after-hours (OEEM)
+*** Technoference, Technorruptions, Technology-mediated interruptions
+*** E-mail incivility
+*** New ways of working (NWW)
+*** Benefits and Threats of Diversity Scale (BTDS)
+*** Algorithmic fairness perceptions
+*** Digital sense of coherence
+*** Screen-time Questionnaire
+*** Workrelated smartphone use
+*** Unfinished tasks
+* END DETAILS                                                                             :ignore:
+#+HTML: </details>
+* WEBSITE                                                                                 :noexport:
+https://janochr.github.io/MU_moduler
+** GIT instructions
+git add .
+git commit -m "message"
+git push -u origin main
+
+* LOCAL                                                                                   :noexport:
+
+# Local Variables:
+# org-link-file-path-type: relative
+# End:
