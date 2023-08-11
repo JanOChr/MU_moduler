@@ -42,10 +42,9 @@
 #+begin_src emacs-lisp :value results :results silent :eval no-export
 (setq org-publish-project-alist
       '(("NAM"
-         :base-directory "NAM_4/"
+         :base-directory ""
          ;;:base-directory "/NAM_4/"
-         :publishing-directory "G:\\Min disk\\UNDER__BEARBEIDING\\NAM/EXPORT/"
-         ;;:publishing-directory "/Volumes/GoogleDrive/My Drive/UNDER__BEARBEIDING/NAM/EXPORT/"
+         :publishing-directory "../EXPORT/"
          :section-numbers nil
          :with-toc nil
 	 :recursive t
@@ -57,12 +56,10 @@
 	 :html-head-include-default-style nil
 	 :publishing-function org-html-publish-to-html)
 	("Attachments"
-	 :base-directory "g:/Min disk/UNDER__BEARBEIDING/NAM/NAM_3/"
-	 ;;:base-directory "/Volumes/GoogleDrive/My Drive/UNDER__BEARBEIDING/NAM/NAM_3/"
+	 :base-directory ""
 	 :base-extension "css\\|txt\\|jpg\\|gif\\|png\\|pdf\\|org\\|yml\\|png\\|setup\\|js\\|swf"
 	 :recursive t
-	 :publishing-directory "G:\\Min disk\\UNDER__BEARBEIDING\\NAM/EXPORT/"
-	 ;;:publishing-directory "/Volumes/GoogleDrive/My Drive/UNDER__BEARBEIDING/NAM/EXPORT/"
+	 :publishing-directory "../EXPORT/"
 	 :publishing-function org-publish-attachment)	
 	("ALL" :components ("NAM" "Attachments"))
 	)
@@ -80,6 +77,13 @@ autoreload-server
 
 #+RESULTS:
 : 9fd5cacb657eacb97a64799de86eb13c
+
+** WEBSITE
+https://janochr.github.io/MU_moduler
+** GIT instructions
+git add .
+git commit -m "message"
+git push -u origin main
 
 * SE ALT-knappen                                                                          :ignore:
 #+HTML: <button id="btnExpandHideAllDetails" onclick="openAll()" style="color:white;background-color:#87B3E6;">Se alt</button>
@@ -130,6 +134,11 @@ autoreload-server
 ** The recovery experience questionnaire                                                   :ignore:
 #+HTML: <details> <summary> Detachment/recovery </summary>
 #+INCLUDE: ../Instrumenter/The_recovery_experience_scale.org
+#+HTML: </details>
+
+** Basic needs satisfaction at work                                                       :ignore:
+#+HTML: <details> <summary> Basic needs satisfaction at work/recovery </summary>
+#+INCLUDE: ../Instrumenter/Basic_need_satisfaction_at_work.org
 #+HTML: </details>
 
 * END DETAILS                                                                             :ignore:
@@ -267,13 +276,6 @@ autoreload-server
 *** Unfinished tasks
 * END DETAILS                                                                             :ignore:
 #+HTML: </details>
-* WEBSITE                                                                                 :noexport:
-https://janochr.github.io/MU_moduler
-** GIT instructions
-git add .
-git commit -m "message"
-git push -u origin main
-
 * LOCAL                                                                                   :noexport:
 
 # Local Variables:
