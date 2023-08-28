@@ -36,7 +36,7 @@
 #+HTML_HEAD: }
 #+HTML_HEAD: </script>
 
-#+HTML_HEAD: <link rel="stylesheet" href="STYLE.css">
+# #+HTML_HEAD: <link rel="stylesheet" href="STYLE.css">
 
 ** PUBLISHING FUNCTION
 #+begin_src emacs-lisp :value results :results silent :eval no-export
@@ -137,8 +137,13 @@ git push -u origin main
 #+HTML: </details>
 
 ** Basic needs satisfaction at work                                                       :ignore:
-#+HTML: <details> <summary> Basic needs satisfaction at work/recovery </summary>
+#+HTML: <details> <summary> Basic needs satisfaction at work </summary>
 #+INCLUDE: ../Instrumenter/Basic_need_satisfaction_at_work.org
+#+HTML: </details>
+
+** Procrastionation at work                                                               :ignore:
+#+HTML: <details> <summary> Procrastionation at work (PAWS) </summary>
+#+INCLUDE: ../Instrumenter/PAWS.org
 #+HTML: </details>
 
 * END DETAILS                                                                             :ignore:
